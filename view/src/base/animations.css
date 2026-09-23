@@ -1,0 +1,8 @@
+@keyframes scroll-logo-clients {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-4300px);
+    }   
+}

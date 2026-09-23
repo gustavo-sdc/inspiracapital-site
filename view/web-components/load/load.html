@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/theme/theme.css">
+
+    <title>Load</title>
+
+    <style>
+
+        .load{
+            position:fixed;
+            z-index: 999;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .l-title{
+            color: var(--color-primary--);
+            font-family:var(--montserrat--)
+        }
+
+        .l-title:after{
+            content: '|';
+            margin-left: 5px;
+            opacity: 1;
+            animation: pisca .7s infinite;
+        
+        }
+
+        @keyframes pisca{
+            0%, 100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <section class="load">
+        <h1 class="l-title">Olá!! Seja muito bem vindo ao futuro da gestão de empresas...</h1>
+    </section>    
+
+<script>
+
+function typeWrite(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+      
+    setTimeout(function(){
+        elemento.innerHTML += letra;
+    }, 75 * i)
+
+  });
+}
+const titulo = document.querySelector('.l-title');
+typeWrite(titulo);
+
+const load = document.querySelector('.load')
+load.style.display = 'none'
+
+</script>    
+</body>
+</html>

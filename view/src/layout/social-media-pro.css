@@ -1,0 +1,372 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+*{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inico */
+
+.inicio{
+    background-image: url('../../img/background-main/socialmediapro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* O que é */
+.info{
+    flex-direction: row-reverse;
+    width: 80vw;
+    margin: 10% auto;
+}
+
+.i-title{
+    color: var(--color-secundary--);
+    font-size: 3.5rem;
+}
+
+/* Entrega */
+.entrega{
+    position: relative;
+    width: 90vw;
+}
+
+.e-title{
+    font-family: var(--inter--);
+    font-weight: 900;
+    font-size: 4rem;
+    color: white;
+
+    -webkit-text-stroke-color: var(--color-primary--);
+    -webkit-text-stroke-width: 1px;
+
+    border-bottom: 2px solid var(--color-secundary--);
+
+    margin-bottom: 5%;
+}
+
+b{
+    margin: 1%;
+}
+
+.n-p{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.n1{
+    font-size: 2.4rem;
+    color: var(--color-secundary--);
+    font-weight: 300;
+    font-family: var(--montserrat--);
+}
+
+.n2{
+    font-family: var(--inter--);
+    color: var(--color-primary--);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.n3{
+    font-family: var(--montserrat--);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-primary--);
+}
+
+.n4{
+    font-family: var(--inter--);
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: white;
+
+    -webkit-text-stroke-color: var(--color-primary--);
+    -webkit-text-stroke-width: 1px;
+}
+
+.n5{
+    font-family: var(--montserrat--);
+    font-weight: 900;
+
+    font-size: 1.8rem;
+    color:var(--color-secundary--);
+}
+
+.n6{
+    font-weight: 400;
+    font-size: 1.8rem;
+    color:var(--color-primary--);
+}
+
+.n7{
+    font-family: var(--montserrat--);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color:var(--color-secundary--);
+}
+
+
+.img{
+    position: absolute;
+    top: 50%;
+
+    right: 15vw;
+    width: 10vw;
+}
+
+.e-img{
+    height: 2.5vw;
+}
+
+#left{
+    left: 15vw;
+}
+
+#e-i-left{
+    margin: 2% 20% 2% 0%;
+}   
+
+/* Metodologia */
+
+.metodologia{
+    width: 90vw;
+    
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+
+    padding: 5% 0%;
+    margin: 20vh auto;
+
+}
+
+.m-title{
+    text-align: left;
+    width: 100%;
+}
+
+
+.m-container{
+    color: white;
+    align-items: start;
+    width: 80%;     
+
+    margin: 5% auto;
+
+    list-style-type: decimal;
+}
+
+.m-content{
+    justify-content: left;
+    align-items: start;
+    margin: 2%;
+}
+
+.m-subtitle{
+    color: var(--color-secundary--);
+    font-size: 2rem;
+}
+
+.m-info{
+    font-size: 1.5rem;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+/* Necessidade */
+
+.necessidade{
+    width: 90vw;
+    margin: 10vh auto ;
+}
+
+.n-title{
+    color:var(--color-primary--);
+    font-size:4rem;
+    margin:5%;
+}
+
+.n-subtitle{
+    color: var(--color-primary--);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.n-destaque{
+    color: var(--color-secundary--);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.content{
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-evenly;   
+}
+
+.cards-container{
+    margin: 5%;
+}
+
+.card{
+    border: 1px solid var(--color-primary--);
+    border-radius: 20px;
+    width: 40vw;
+    height: 7vh;
+
+    margin: 1% auto;
+}
+
+.n-info{
+    color: var(--color-secundary--);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.n-img{
+    height: 25vw;
+}
+
+.b-secundary{
+    padding: 2%;
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: center top;
+    }
+    .container{
+        margin-left: 0%;
+    }
+
+    .i-title{
+        font-size:2.5rem;
+    }
+
+    .i-img{
+        height: 20vw;
+    }
+
+    .n-p{
+        width:80%;
+    }
+
+    .img{
+        right: 0%;
+    }
+
+    #left{
+        left: 0%;
+    }
+
+    .e-img{
+        height: 5vw;
+    }
+
+    .metodologia{
+        margin-bottom: 5%;
+    }
+
+    .content{
+        width: 90vw;
+    }
+
+    .card{
+        width: 50vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width:550px){
+    .info{
+        flex-direction: column;
+        margin: 15vh auto;
+    }
+
+    .i-img{
+        height: 55vw;
+    }
+
+    .e-title{
+        font-size: 3rem;
+    }
+
+    .n1{
+        font-size: 1.2rem;
+    }
+
+    .n3{
+        font-size:1rem;
+    }
+
+    .n4{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .n5{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .n7{
+        font-size: 1.3rem;
+    }
+
+    .m-title{
+        font-size: 2rem;
+    }
+
+    .m-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .m-info{
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .n-title{
+        font-size: 2rem;
+    }
+
+    .n-subtitle, .n-destaque{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+    } 
+
+    .n-img{
+        height: 40vw;
+        margin: 5% auto;
+    }
+
+    .card{
+        width: 90vw;
+        height: 7vh;
+    }
+
+    .n-info{
+        font-size: 1.3rem;
+    }
+
+}

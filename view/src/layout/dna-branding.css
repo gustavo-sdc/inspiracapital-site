@@ -1,0 +1,281 @@
+/* Dependencias */
+
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/dna-branding.png');
+    background-position:center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Coca e Design */
+
+.coca, .design{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90vw;
+    height: max-content;
+
+    margin: 10vh auto;
+}
+
+.c-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    width: max-content;
+    height: 30vh;
+
+    margin: 5% 0% 5% 0%;
+}
+
+.c-title{
+    color: var(--color-secundary--);
+    font-family: var(--montserrat--);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.c-info{
+    font-size: 2rem;
+    color: var(--color-primary--);
+    font-family: var(--montserrat--);
+
+}
+
+.c-img{
+    height: 20vw;
+}
+
+/* Pergunta */
+
+.ask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90vw;
+    height: 40vh;
+
+    margin: 10vh auto;
+}
+
+.a-title{
+    color: var(--color-secundary--);
+    font-family: var(--montserrat--);
+    font-weight:400 ;
+
+    text-align: center;
+}
+
+.a{
+    color: var(--color-primary--);
+    font-family: var(--montserrat--);
+    font-weight: bold;
+    font-size: 3rem;
+
+    text-align: center;
+
+    margin-bottom: 10vh;
+}
+
+/* Dados */
+
+.dados{
+    width: 100vw;
+    height: max-content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 15vh auto;
+}
+
+.d-container{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.d-number{
+    font-weight: 900;
+    color: var(--color-secundary--);
+
+    font-size: 4rem;
+}
+
+.d-info{
+    font-weight: 500;
+    color: var(--color-primary--);
+    
+    font-size: 2.5rem;
+}
+
+/* Entrega */
+
+.entrega{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    width: 90vw;
+    height: max-content;
+
+    margin: 10vh auto;
+
+    background-color: var(--color-primary--);
+    border-radius: 10px;
+
+}
+
+.e-img{
+    height: 25vw;
+    margin-right: 5%;
+}
+
+.e-title{
+    font-family: var(--montserrat--);
+    color: var(--color-secundary--);
+    font-weight: 500;
+    text-align: left;
+}
+
+.e-items{
+    width: 95%;
+    margin: 5% 0% 5% 5%;
+}
+
+.e-item{
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: center top;
+    }
+
+    .c-container{
+        height: 20vh;
+    }
+
+    .c-info{
+        font-size: 1.5rem;
+    }
+
+    .ask{
+        margin: 5vh auto;
+    }
+
+    .dados{
+        margin: 10vh auto 15vh auto;
+    }
+
+    .d-info{
+        text-align: center;
+    }
+
+    .d-number{
+        font-size:3rem;
+    }
+
+    .d-info{
+        font-size: 2rem;
+    }
+
+    .e-img{
+        height: 35vw;
+    }
+}
+
+@media(max-width:550px){
+    .coca{
+        flex-direction: column-reverse;        
+        margin: 5vh auto;
+    }
+
+    .c-img{
+        height: 40vw;
+    }
+
+    .c-container{
+        height: max-content;
+        width: 90vw;
+    }
+
+    .c-title{
+        font-size: 2rem;
+    }
+    .c-info{
+        margin: 5% auto;
+        font-size: 1.3rem;
+    }
+
+    .b-secundary{
+        padding: 3%;
+    }
+
+    .design{
+        flex-direction: column;        
+        margin: 5vh auto; 
+    }
+
+    .dados{
+        flex-direction: column;
+    }
+
+    .d-container{
+        width: 80vw;
+        margin: 5%;
+    }
+
+    .entrega{
+        flex-direction: column;
+        padding: 5% 1% 5% 1%;
+    }
+
+    .e-img{
+        display: none;
+    }
+
+    .e-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .e-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .e-item{
+        font-size: 1.3rem;
+        margin: 2.5% 2.5%;
+        font-weight: 400;
+    }
+
+}

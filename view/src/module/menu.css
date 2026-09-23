@@ -1,0 +1,109 @@
+@import url('../../src/theme/theme.css');
+
+header{
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 2.5vh;
+    right: 4vw;
+    z-index: 0;
+
+    transition:.1s;
+    cursor: pointer;
+}
+
+.header-top{
+    width: max-content;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+
+    padding:0 5%;
+    transition:.5s;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:1vw 0 1vw 0;
+
+    width: max-content;
+}
+
+.icon-menu{
+    font-size:2rem;
+    color:var(--color-secundary--);
+}
+
+.m-title{
+    font-family:var(--montserrat--);
+    font-size: 1.25rem;
+    margin:1.5% 0%;
+    color: var(--color-secundary--);
+}
+
+.list-options{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+}
+
+.m-option{
+    margin: 0% 2% 0% 2%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-primary--);
+    font-weight: 400;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px){
+    .solucoes{
+        width: 90vw;
+    }
+
+    header{
+        right: 5vh;
+
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px){
+    .header-top{
+        
+        justify-content: left;
+    }
+
+    .menu{
+        margin: 2.5%;
+    }
+}
+
+/* Efeitos */
+
+input{
+    display: none;
+}
+
+#solucoes:checked + .solucoes{
+    display: flex;
+}

@@ -1,0 +1,704 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+}
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/easy-finance.png');
+    background-size: cover;
+}
+
+/* Apresentação */
+.apresentation{
+    width: 80vw;
+    height: max-content;
+
+    margin: 20vh auto 0vh auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.a-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 10vh;
+}
+
+#a-title{
+    color: var(--color-secundary--);
+    font-size: 6rem;
+    text-align: center;
+}
+
+#a-description{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.destaque{
+    color: var(--color-secundary--);
+}
+
+/* Vantagens */
+.vantagens{
+    width: 100vw;
+    height: max-content;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.wave{
+    position: relative;
+    top: 1vh;
+    z-index: 0;
+
+    width: 100vw;
+    height: 50vw;
+}
+
+.v-docker{
+    position: absolute;
+    z-index: 0;
+    
+    top: 35vh;
+
+    height: 25vh;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.v-container{
+    width:40vw;
+    height: max-content;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.v-img-container{
+    width:30vw;
+    height: max-content;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.v-title{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: left;
+
+}
+
+.v-info{
+    margin: 5% auto;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.v-destaque{
+    color: var(--color-secundary--);
+}
+
+.v-img{
+    width: 70vh;
+}
+
+.v-logo{
+    width: 25vh;
+}
+
+.v-subtitle{
+    font-size: 1.5rem;
+}
+
+
+/* Jornada */
+
+.jornada{
+    width: 90vw;
+    height: max-content;
+
+    margin: 10vh auto;
+    padding: 5vh 0%;
+}
+
+.j-title{
+    color: var(--color-primary--);
+    text-align: left;
+
+    font-size: 4.5rem;
+
+    margin: 5% 0%;
+    width: 40%;
+}
+
+.j-destaque{
+    color: var(--color-secundary--);
+}
+
+.j-container{
+    background-color: var(--blue-secundary--);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 5% 0%;
+
+    margin: 2.5% auto;
+}
+
+.j-subtitle{
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+.j-img-pay{
+    height: 30vw;
+}
+
+.j-content{
+    width: 40vw;
+}
+
+.j-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    margin: 3% auto;
+}
+
+.j-info{
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1%;
+}
+
+#j-transparent{
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.j-box{
+    background-color: var(--blue-secundary--);
+    border-radius: 20px;
+    
+    padding: 5% 0%;
+    width: 42.5vw;
+
+    padding: 1%;
+
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.j-box-img{
+    height: 15vw; 
+    position: absolute;
+    right: 2vh;  
+}
+
+.j-box-list{
+    width: 60%;
+}
+
+.j-box-subtitle{
+    font-size: 2.5rem;
+}
+
+
+/* Report */
+
+#reports{
+    padding: 5%;
+}
+
+.j-rep-title{
+    font-size: 2.5rem;
+}
+
+.report{
+    margin: 2.5%;
+
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.j-graphics{
+    height: 25vw;
+}
+
+
+
+/* Números */
+
+.number{
+    width: 80vw;
+    margin: 5vh auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-title{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.n-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2.5%;
+
+    width: 75%;
+
+    margin: 5vh auto;
+}
+
+.n-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5%;
+}
+
+.n-number{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.n-info{
+    font-size: 1.8rem;
+    width: 75%;
+    text-align: center;
+}
+
+
+/* Atendimento */
+
+.support{
+    width: 80vw;
+
+    margin: 15vh auto;
+}
+
+.s-title{
+    color: var(--color-secundary--);
+    text-align: left;
+}
+
+.s-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-support{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+    margin: 2.5% auto;
+}
+
+.rep-info{
+    color: var(--color-primary--);
+    text-align: left;
+    font-size: 2rem;
+}
+
+.s-img{
+    height: 25vw;
+}
+
+/* Vídeo */
+
+.depoimento{
+    width: 80vw;
+    height: max-content;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20vh auto 20vh auto;
+}
+
+.video{
+    background-color: var(--color-primary--);
+    width: 45vw;
+    height: 45vh;
+    border-radius: 20px;
+}
+
+.d-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5%;
+
+    width: 50%;
+}
+
+.d-title{
+    font-size: 3rem;
+    font-family: var(--montserrat--);
+    font-weight: 400;
+
+    color: var(--color-primary--);
+
+    width: 100%;
+    
+    text-align: center;
+}
+
+.d-1, .d-2{
+    color: var(--color-secundary--);
+    font-weight: 400;
+    font-family: var(--montserrat--);
+}
+
+.d-2{
+    font-weight: 600;
+}
+
+#b-depoimento{
+    margin-top: 5%;
+
+    width: 10vw;
+    height: 7vh;
+}
+
+@media (max-width:1200px){
+    /* Inicio */
+
+
+}
+
+
+@media (max-width:1000px){
+    /* Clientes*/
+    .scroll-clients{
+        height: 20%;
+    }
+
+    /* Apresentação */
+
+    .apresentation{
+        margin: 5vh auto;
+    }
+
+    .a-info{
+        margin-bottom: 5vh;
+    }
+
+    #a-title{
+        font-size: 3.5rem;
+    }
+
+    #a-description{
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    /* Vantagens */
+
+    .vantagens{
+        height: 50vh;
+    }
+
+    .wave{
+        height: 60vw;
+    }
+
+
+    /* Vantagens */
+
+    .v-docker{
+        width: 90vw;
+        height: max-content;
+        top: 12.5vh;
+    }
+
+    .v-img{
+        width: 30vh;
+    }
+
+    .v-logo{
+        width: 15vh;
+    }
+
+    /* Jornada */
+    .jornada{
+        margin: 5vh auto;
+    }
+
+    .j-title{
+        margin: 0%;
+        width: 60%;
+        font-size: 3rem;
+    }
+
+    .j-box{
+        height: 25vh;
+    }
+
+    /* Numbers */
+
+    .n-grid{
+        width:100%;
+    }
+
+    /* Support */
+    .support{
+        margin: 5vh auto;
+    }
+
+    .rep-info{
+        font-size:1.5rem;
+    }
+
+
+    /* Depoimento */
+
+    .video{
+        width: 45vw;
+        height: 25vh;
+    }
+
+    .depoimento{
+        margin: 7.5vh auto;
+    }
+
+    .d-title{
+        font-size: 2rem;
+    }
+
+    #b-depoimento{
+        width: 100%;
+        height: 4vh;
+    }
+
+}
+
+@media (max-width:550px){
+
+    /* Apresentação */
+
+    .apresentation{
+        align-items: center;
+    }
+
+    .a-info{
+        flex-direction: column;
+        margin-bottom: 0%;
+    }
+
+    #a-description{
+        text-align:center;
+        width: 90%;
+        margin: 5vh;
+    }
+
+    .b-primary{
+        width: 80%;
+        height: 4vh;
+    }
+
+    /* Vantagens */
+    .wave{
+        width: 160vw;
+        height: 170vw;
+    }
+
+    .vantagens{
+        height: 85vh;
+    }
+
+    .v-docker{
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+
+    .v-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .v-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .v-info{
+        text-align: center;
+    }
+
+    .v-img-container{
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .v-img{
+        width: 40vh;
+    }
+
+    .j-title{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .j-container{
+        flex-direction: column-reverse;
+        padding: 5vh 0%;
+    }
+
+    .j-img-pay{
+        height: 70vw;
+        margin-bottom: 5vh;
+    }
+
+    .j-content, .j-list{
+        width: 85vw;
+    }
+
+    .b-secundary{
+        padding: 3%;
+    }
+
+    .j-box{
+        width: 90vw;
+        margin: 2.5vh auto;
+        height: max-content;
+        padding: 5vh 0%;
+    }
+
+    #box{
+        flex-direction: column-reverse;
+    }
+
+    .j-box-img{
+        position: relative;
+        height: 50vw;
+    }
+
+    .j-subtitle{
+        width: 95%;
+        margin: auto;
+    }
+
+    .report{
+        width:inherit ;
+    }
+
+    #reports{
+        flex-direction: column;
+    }
+
+    .j-graphics{
+        height: 50vw;
+    }
+
+    .n-grid{
+        grid-template-columns: 100%;
+        margin: 15vh auto;
+    }
+
+
+    .s-box{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .card-support{
+        width: inherit;
+    }
+
+    .s-img{
+        height: 50vw;
+        margin: 5% auto;
+    }
+    
+    .depoimento{
+        margin-top: 10vh;
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+
+    .video{
+        width: inherit;
+    }
+
+    .d-info{
+        width: inherit;
+    }
+}

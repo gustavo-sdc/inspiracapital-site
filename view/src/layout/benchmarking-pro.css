@@ -1,0 +1,443 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+*{
+    color:var(--color-primary--);
+}
+
+h2{
+    color: var(--color-primary--);
+}
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/benchmarking-pro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#arrow-down{
+    background-color: white;
+    color:var(--color-primary--);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1%;
+    border-radius: 100%;
+
+    position: absolute;
+    top:95vh;
+    left: 47.5vw;
+
+    width: 25px;
+    height: 25px;
+
+    font-size: 3rem;
+    font-weight:900;
+}
+
+#arrow-down-icon{
+    width: 15px;
+}
+
+/* Benchmarking Pro (explicação) */
+
+.b-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+    width: 100vw;
+    height: 35vh;
+}
+
+.b-title{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    font-weight: 1000;
+}
+
+.b-content{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--color-secundary--);
+    border-radius: 20px;
+
+    width: 90vw;
+    height: 90%;
+}
+
+.content{
+    padding:0% 2.5%;
+
+    font-size: 1.6rem;
+
+    color:white;
+
+    height: auto;
+}
+
+/* Experiência */
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: max-content;
+
+    margin: 10% auto 10% auto;
+    padding: 5% 0% 5% 0%;
+    
+    background-color: var(--grey--);
+}
+
+.e-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: max-content;
+
+    margin: 5% 0% 5% 0%;
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+
+    margin:0% 2.5% 0% 2.5%;
+}
+
+.e-description{
+    text-align:center;
+    font-size:2.5rem;
+    color: var(--color-primary--);
+}
+
+/* Metodologia */
+
+.metodologia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: max-content;
+}
+
+.m-content-container{
+    margin: 5% 0% 5% 0%;
+}
+
+.m-background{
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0% 2.5% 0% 2.5%;
+
+    left: 0;
+    z-index: 1;
+
+    width: 95%;
+    height: 100%;
+}
+
+.m-img{
+    height: 2vw;
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    width: 20%; 
+}
+
+#outside{
+    margin-right: 25%;
+}
+
+#r-outside{
+    margin-left: 25%;
+}
+
+.m-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-content-box{
+    width: 40vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.m-description{
+    width: 75%;
+    font-size: 1.5rem;
+    margin-top:2.5%;
+}
+
+/* Apresentação final */
+
+.relatorio{
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin:5% 0% 5% 0%;
+}
+
+.relatorio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width:60%;
+    height: 35vh;
+    text-align: center;
+}
+
+.r-description{
+    font-size: 2.5rem;
+    margin:5% auto;
+}
+
+.r-title{
+    font-size: 2.5rem;
+}
+
+.r-img{
+    background-color: brown;
+    border-radius: 20px;
+    
+    height: 25vw;
+}
+
+.r-call-action{
+    font-family: var(--inter--);
+
+    background-color: var(--color-secundary--);
+    border: none;
+    border-radius: 10px;
+
+    color:white;
+
+    margin-top: 5%;
+
+    width: 10vw;
+    height: 5vh;
+}
+
+/* Cronograma */
+
+.cronograma{
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10% 0% 10% 0%;
+}
+
+.cronograma-container{
+    background-color: var(--color-primary--);
+    border-radius:20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5%;
+
+    width: 80%;
+    height: 100%;
+}
+
+.c-info{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+
+    margin-top: 2.5%;
+}
+
+.c-b{
+    color: var(--color-secundary--);
+}
+
+#c-title{
+    font-size: 3rem;
+    margin-top: 0%;
+}
+
+
+@media (max-width:900px){
+    .b-container{
+        height: 25vh;
+    }
+
+    .m-img{
+        height: 5vw;
+    }  
+
+    /*Relatorio */
+
+    .relatorio{
+        height: auto;
+    }
+
+    /* Cronograma */
+
+    .cronograma{
+        height: max-content;
+        margin: 20% 0% 20% 0%;
+    }
+    
+    .cronograma-container{
+        height: max-content;
+    }
+
+    #c-title{
+        font-size: 2.3rem;
+    }
+
+    .c-info{
+        margin: 3% 0% 3% 0%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:450px){
+
+    .container{
+        margin-left: 0%;
+    }
+    
+
+    .b-title{
+        font-size: 2.5rem;
+    }
+
+    .b-container{
+        height: 40vh;
+    }
+
+    .b-content{
+        height: 93.5%;
+    }
+    .content{
+        width: 75vw;
+    }
+
+    /*Informações*/
+
+    .e-numbers{
+        font-size: 3rem;
+    }
+
+    .e-description{
+        font-size: 2rem;
+    }
+
+    .info{
+        margin: 5% 0% 5% 0%;
+    }
+
+    /* Metodologia */
+    .metodologia{
+        margin-top: 20%;
+    }
+
+    .m-background{
+        visibility: hidden;
+    }
+
+    .m-content-box{
+        width: 85vw;
+    }
+
+    /* Relatorio */
+
+    .relatorio{
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 15vh;
+    }
+
+    .relatorio-container{
+        width: 85%;
+        order: 1;
+    }
+
+    .r-call-action{
+        width: 50vw;
+    }
+
+    .r-img{
+        order: 0;
+        height: 50vw;
+
+        margin-bottom: 10%;
+    }
+
+
+}

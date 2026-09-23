@@ -1,0 +1,260 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+*{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+/* Incio */
+
+
+.inicio{
+    background-image: url('../../img/background-main/macrovision.png');
+    background-position: right;
+    background-size: cover;
+}
+
+/* Produto */
+.produto{
+    width: 90vw;
+    height: max-content;
+    margin: 10% auto 1% auto;
+
+    align-items: start  ;
+}
+
+.p-title{
+    width: 100%;
+    justify-content: left;
+    align-items: start;
+
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    letter-spacing: -2%;
+
+    text-align: left;
+}
+
+.produto p{
+    color: var(--color-primary--);
+    font-size: clamp(1rem, 1rem + 1vw, 2rem);
+    line-height: clamp(1.25rem, 1.25rem + 1vw, 2.25rem);
+    font-weight: 400;
+    font-family: var(--montserrat--);
+
+    margin-top: 2.5%;
+
+    text-align: left;
+}
+
+#p-button{
+    margin: 5% 0% 5% 0%;
+}
+
+/* Metodologia */
+
+.metodologia{
+    background-color: var(--color-primary--);
+
+    justify-content: space-evenly;
+
+    width:100vw;
+    height: max-content;
+
+    flex-direction: row;
+
+    border-radius: 20px;
+
+    padding: 5% 0%;
+}
+
+.m-title{
+    font-size: 3rem;
+}
+
+.m-container{
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 3%;
+    width: 40vw;
+}
+
+.m-content{
+    flex-direction: row;
+    justify-content: left;
+    margin: 5%;
+
+    width: 90%;
+}
+
+.m-img{
+    height: 1.5vw;
+    margin-right: 2%;
+}
+
+.m-info{
+    font-family: var(--inter--);
+    font-size:2rem;
+    color: var(--color-primary--);
+}
+/* Entrega */
+
+.entrega{
+    width: 100vw;
+}
+
+.e-title{
+    color: var(--color-primary--);
+    margin: 10%;
+}
+
+.e-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 95vw;
+}
+
+.e-content{
+    background-color: var(--color-secundary--);
+    border-radius: 20px;
+    padding: 2%;
+
+    margin:1%;
+
+    justify-content: space-evenly;
+
+    width: 15vw;
+    height: 20vh;
+}
+
+.e-img{
+    height: 2.5vw;
+}
+
+.e-info{
+    color: white;
+    font-family: var(--montserrat--);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Procedimentos */
+
+.procedimento{
+    margin: 10% auto;
+}
+
+.pr-title{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+
+    width: 90vw;
+    height: 20vh;
+
+    color: white;
+}
+
+.p-content{
+    width:90vw;
+    justify-content: center;
+}
+
+.p-destaque{
+    color: var(--color-secundary--);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: center;
+        background-size: cover;
+    }
+
+    .p-description{
+        font-size: 1.5rem;
+    }
+
+    .m-title{
+        width: 30vw;
+    }
+
+    .m-info{
+        font-size: 1.3rem;
+    }
+
+    .e-content{
+        width: 25vw;
+    }
+
+    .e-img{
+        height: 5vw;   
+    }
+
+    .pr-title{
+        height: 10vh;
+    }
+
+    .p-destaque{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px){
+
+
+    .p-title{
+        font-size: 3rem;
+    }
+
+    .p-description{
+        font-size: 1rem;
+    }
+
+    .metodologia{
+        flex-direction: column;
+    }
+
+    .m-container{
+        margin: 5%;
+        width: 80vw;
+    }
+
+    .e-title{
+        font-size: 2.5rem;
+    }
+
+    .e-content{
+        width: 80vw;
+    }
+
+    .e-img{
+        height: 10vw;
+    }
+
+    .pr-title{
+        font-size: 2rem;
+    }
+
+    .p-destaque{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

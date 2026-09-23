@@ -1,0 +1,65 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/privacidade.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a-info{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.a-sub-info{
+    color: var(--color-secundary--);
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+    font-weight: 700;
+}
+
+.privacidade{
+    height: 100vh;
+    width:100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-title{
+    color: var(--color-primary--);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.p-info{
+    color: var(--color-secundary--);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,26 @@
+.btn-whatsapp-fix{
+    width: max-content;
+    position: fixed;
+
+    bottom: 2.5vh;
+    right: 4vw;
+    height: 12.5vh;    
+}
+
+.img-whatsapp-icon{
+    width: 8vh;
+    height:8vh;
+}
+
+.btn-whatsapp-fix:hover .img-whatsapp-icon{
+    width: 10vh;
+    height: 10vh;
+    transition:.5s;
+
+}
+
+@media (max-width: 550px){
+    .btn-whatsapp-fix{
+        right:10vw;
+    }
+}

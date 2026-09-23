@@ -1,0 +1,167 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/judasaservice.png');
+}
+
+/* Atuação */
+
+.atuacao{
+    width: 80vw;
+    height: max-content;
+
+    justify-content: space-evenly;
+    align-items: start;
+
+    padding: 10vh 0%;
+}
+
+.a-title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-secundary--);
+}
+
+.a-info{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-primary--);
+    font-family: var(--montserrat--);
+    margin: 5% auto;
+}
+
+/* Entrega */
+.entrega{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+
+    width: 100vw;
+    height: max-content;
+    
+    padding: 10vh 0%;
+}
+
+.e-title{
+    color: var(--color-secundary--);
+    text-align: left;
+
+    width: 80vw;
+
+    justify-content: left;
+    align-items: start;
+}
+
+.e-card{
+    background-color: white;
+    border-radius: 20px;
+    
+    width: 80vw;
+
+    margin: 2.5% 0%;
+    padding: 5% 0%;
+}
+
+.e-subtitle{
+    flex-direction: row;
+    justify-content: left;
+
+    width: 80%;
+
+    border-bottom: 2px solid var(--color-secundary--);
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+
+.e-list{
+    width: 60vw;
+    align-items: start;
+}
+
+.e-list-item{
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 1.5% 0%;
+}
+
+.e-list-info{
+    text-align: left;
+    font-size: 1.5rem;
+    color: var(--color-primary--);
+    font-family: var(--montserrat--);
+    font-weight: 400;
+}
+
+.e-icon{
+    height: 3vw;
+}
+
+
+/* Responsividade */
+
+@media (max-width:1000px){
+    .container{
+        margin-left:0%;
+    }
+
+    .atuacao{
+        margin: 5vh auto 10vh auto;
+    }
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url(../../img/background-main/judasaservice-mobile.png);
+    }
+
+    .e-card{
+        width: 90vw;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
+    .e-icon{
+        height: 10vw;
+    }
+
+    .e-list, .e-subtitle{
+        width: 80vw;
+    }
+
+    .e-list-item{
+        margin: 5% auto;
+    }
+
+    .e-list-info{
+        font-size: 1.3rem;
+    }
+
+
+}

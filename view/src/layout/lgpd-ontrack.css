@@ -1,0 +1,377 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/lgpd-ontrack.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.i-title{
+    font-weight: 300;
+}
+
+
+/* Titulo */
+h1{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    width: 70%;
+
+    margin: 10vh auto;
+
+    flex-direction: row;
+}
+
+/* O que fazemos? */
+.atuacao{
+    flex-direction: row;
+}
+
+.a-container{
+    width: 50%;
+    align-items: start;
+}
+
+.a-title{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-family: var(--montserrat--);
+    font-weight: 300;
+    text-align: left;
+}
+
+.a-info{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-primary--);
+
+    margin: 5% auto;
+}
+
+/* Desafios */
+.desafios{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+    padding: 5% 0%;
+
+    width: 100vw;
+    height: max-content;
+}
+
+.d-title{
+    color: var(--color-secundary--);
+    text-align: left;
+    justify-content: left;
+    align-items: start;
+
+    width:100%;
+    margin-left: 15%;
+}
+
+.d-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: left;
+
+    width: 85vw;
+    margin: 5% auto 2.5% auto;
+}
+
+.d-card{
+    flex-direction: row;
+    width: 40vw;
+    justify-content: left;
+    margin: 1%;
+}
+
+.d-icon{
+    height: 3vw;
+}
+
+.d-info{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#d-button{
+    margin-right:-75%;
+}
+
+/* Metodologia */
+
+.metodologia{
+    align-items: start;
+    
+    margin: 5vh auto;
+}
+
+.m-title{
+    color: var(--color-primary--);
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    width: 100%;
+    text-align: center;
+
+    margin: 5% auto;
+}
+
+.m-card{
+    border-left: 2px solid var(--color-primary--);
+    align-items: start;
+
+    width: 80vw;
+    padding: 5vh 0% 0% 2%;
+
+}
+
+.m-subtitle{
+    font-size: 3rem;
+    font-family: var(--montserrat--);
+}
+
+.m-info{
+    color: var(--color-primary--);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#m-button{
+    margin:10vh auto;
+}
+
+/* Diferenciais */
+.diferencial{
+    width: 80vw;
+
+    align-items: start;
+    justify-content: left;
+}
+
+.di-title{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-weight: 400;
+
+    text-align: left;
+    width: 80vw;
+
+    justify-content: left;
+    align-items: start;
+}
+
+.di-list{
+    align-items: start;
+    width: 95%;
+
+    margin: 5vh auto;
+}
+
+.di-info{
+    color: var(--color-primary--);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+/* Cronograma */
+.cronograma{
+    width: 100vw;
+    height: 35vh;
+    margin: 20vh auto;
+
+    background-color: var(--color-primary--);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.c-title{
+    font-weight: 300;
+    font-size: 5rem;
+    margin: 25vh auto 0% auto;
+
+    border-bottom: 2px solid var(--color-secundary--);
+}
+
+.c-subtitle{
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.c-container{
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.c-card{
+    background-color: var(--color-secundary--);
+    border-radius: 20px;
+    margin: 1%;
+
+    width: 15vw;
+    height: 25vh;
+
+    justify-content: space-evenly;
+}
+
+.c-img{
+    height: 5vw;
+}
+
+.c-info-title{
+    color: white;
+    font-size: 2rem;
+}
+
+.c-info{
+    font-weight:300;
+    color:white;
+    font-size:1.3rem;
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: top;
+    }
+
+    .a-img{
+        height: 25vw;
+    }
+
+    .a-info{
+        font-size: 1.5rem;
+    }
+
+    .atuacao{
+        margin-bottom:10vh;
+    }
+
+    .d-title{
+        font-size: 2.5rem;
+    }
+
+    .c-container{
+        width: 100vw;
+    }
+
+
+    .c-card{
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .c-title{
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url(../../img/background-main/lgpdontrack.png);
+    }
+
+    .atuacao{
+        flex-direction: column-reverse;
+    }
+
+    .a-container{
+        width: 90vw;
+    }
+
+    .a-img{
+        height: 60vw;
+    }
+
+    .desafios{
+        height: 60vh;
+        justify-content: space-evenly;
+    }
+
+    .d-title{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .d-container{
+        flex-direction: column;
+    }
+
+    .d-card{
+        width: 90vw;
+    }
+
+    .d-icon{
+        height: 10vw;
+    }
+
+    .d-info{
+        font-size: 1.3rem;
+    }
+
+    #d-button{
+        margin-right: 0%;
+    }
+
+    .m-subtitle{
+        font-size: 2rem;
+    }
+
+    .m-info{
+        font-size: 1.5rem;
+    }
+
+    .di-info{
+        font-size: 1.5rem;
+    }
+
+    .cronograma{
+        height: max-content;
+        border-radius: 20px;
+
+        padding: 5vh 0%;
+
+        margin: 5vh auto;
+    }
+
+    .c-title{
+        margin-top: 0%;
+        font-size: 3rem;
+    }
+
+    .c-container{
+        flex-direction: column;
+    }
+
+    .c-card{
+        width: 90vw;
+    }
+
+    .c-img{
+        height: 10vw;
+    }
+}

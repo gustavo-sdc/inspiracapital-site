@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /model/
+Disallow: /controller/
+Disallow: /view/
+
+Sitemap: https://inspiracapital.com.br/sitemap.xml

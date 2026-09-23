@@ -1,0 +1,209 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/hunting-.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Apresentação */
+
+.apresentacao{
+    flex-direction: row;
+    margin: 10vh auto;
+}
+
+.a-container{
+    width: 50%;
+}
+
+.a-info{
+    font-size: 3rem;
+    color: var(--color-primary--);
+}
+
+.a-img{
+    height: 20vw;
+}
+
+.b-secundary{
+    margin: 5% auto 5% 0%;
+}
+
+/* Procedimento */
+
+.p-container{
+    width: 90vw;
+    margin: 0% auto;
+    flex-direction: row-reverse;
+}
+
+.p-info{
+    font-size: 3rem;
+    color: var(--color-primary--);
+}
+
+.p-content{
+    width: 60%;
+}
+
+.p-img{
+    height: 20vw;
+}
+
+.p-passos{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+
+    width: 90vw;
+    height: max-content;
+
+    padding: 5% 0%;
+    margin: 5% auto;
+}
+
+.passos-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.p-card{
+    flex-direction: column-reverse;
+    align-items: start;
+    margin: 0% auto 5% auto;
+}
+
+.p-fase{
+    align-items: start;
+}
+
+.passos-content{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.passo-info{
+    color: var(--color-secundary--);
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: var(--montserrat--);
+}
+
+.passos-subtitle{
+    margin: 0% auto 0% auto;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* Diferenciais */
+
+.diferencial{
+    align-items: start;
+    width: 80vw;
+    margin: 5vh auto;
+}
+
+.d-container{
+    align-items: start;
+    margin: 5% 0% 0% 1.5%;
+}
+
+.d-title{
+    font-size: 3.5rem;
+    color: var(--color-secundary--);
+}
+
+.list{
+    font-size: 2rem;
+    color: var(--color-primary--);
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-position:top;
+        background-size: auto;
+    }
+
+    .passos-subtitle{
+        font-size: 2rem;
+    }
+
+    .passos-content{
+        font-size: 1.3rem;
+    }
+
+    .list{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url(../../img/background-main/mobile-hunting.png);
+        background-position: center top;
+        background-size: contain;  
+    }
+
+    .logo-main{
+        height: 25vw;
+    }
+
+    .apresentacao, .p-container{
+        flex-direction: column-reverse;
+    }
+
+    .a-info, .p-info{
+        width: 80vw;
+        font-size: 2rem;
+    }
+
+    .a-img, .p-img{
+        height: 40vw;
+    }
+
+    .b-secundary{
+        padding: 3%;
+    }
+
+    .p-passos{
+        padding: 5vh 0%;
+        margin-top: 10vh;   
+    }
+
+    .p-card{
+        width: 70vw;
+    }
+
+    .passos-subtitle{
+        font-size: 1.8rem;
+        width: 80%;
+    }
+}

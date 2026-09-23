@@ -1,0 +1,65 @@
+h2{
+    font-weight:400;
+    font-size:2.8rem;
+}
+
+.title{
+    color:white;
+    font-family:'Lexend Deca';
+    margin:0%;
+    padding:1.5%;
+    text-align:center;
+
+    border-bottom: 2px solid var(--color-secundary--)
+}
+
+#slide{
+    margin:2vh auto;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left; 
+
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.scroll{
+    width: 90vw;
+    height: max-content;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    padding: 1% 0%;
+
+    background: linear-gradient(var(--gradient-blue-));
+    margin: auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+
+    width: max-content;
+    height: inherit;
+
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container-clients{
+    margin:10vh auto;
+}
+
+.img{
+    width: 100px;
+    margin: auto 20px auto 20px;
+}

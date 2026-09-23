@@ -1,0 +1,392 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+*{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/back-content-mkt.png');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+/* O que fazemos */
+.SEO{
+    width:100vw;
+    position: relative;
+
+    justify-content: space-evenly;
+
+    height: 40vw;
+
+}
+
+.s-title{
+    background-color: var(--color-secundary--);
+    border-radius: 0px 20px 20px 0px;
+
+    height: 5vh;
+    padding: 2%;
+
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.s-subtitle{
+    margin-top: 10vh;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.s-info{
+    width: 70%;
+    font-size: 2rem;
+    color: var(--color-primary--);
+}
+
+/* Metodologia */
+
+.metodologia{
+    width: 90vw;
+    height: max-content;
+
+    margin: 10vh auto;
+}
+
+.m-container1{
+    flex-direction: row;
+    background-color: var(--color-primary--);
+
+    width: 100%;
+    height: 45vh;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+.m-container2{
+    background-color: var(--color-secundary--);
+    
+    height: 10vh;
+    width: 100%;
+    
+    border-radius: 0px 0px 20px 20px;
+}
+
+.m-subtitle{
+    color: white;
+    text-align: center;
+    
+    font-weight: 300;
+    font-size: 1.8rem;
+
+    width: 90%;
+}
+
+.m-card{
+    width: 15vw;
+    height: 100%;
+
+    justify-content: space-evenly;
+}
+
+#c2{
+    background: rgba(255, 255, 255, 0.1);
+
+    height: 100%;
+}
+
+#c3{
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#c4{
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#c5{
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#c6{
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.m-img{
+    height: 2.5vw;
+}
+
+/* Problemas */
+
+.problems{
+    width: 80vw;
+
+    margin: 5vh auto;
+}
+
+.p-title{
+    color: var(--color-primary--);
+    font-size: 3.5rem;
+    margin: 20vh auto;
+}
+
+.p-card{
+    flex-direction: row;
+    margin: 5vh auto;
+}
+
+.p-content{
+    align-items: flex-start;
+    margin: 5%;
+}
+
+.p-img{
+    height: 15vw;
+}
+
+.p-description{
+    color: var(--color-primary--);
+    font-size: 3rem;
+    margin: 5% auto;
+
+    text-align: left;
+}
+
+#right{
+    flex-direction: row-reverse;
+}
+
+#center{
+    flex-direction: column-reverse;
+}
+
+#b-center{
+    margin-bottom: 5vh;
+    padding:1.5%;
+}
+
+#r-b-center{
+    padding: 1.5%;
+}
+
+#p-center-img{
+    height: 10vw;
+}
+
+.b-secundary{
+    padding: 3%;
+}
+
+/* Resultados */
+
+.results{
+    margin: 5vh auto;
+    width: 100vw;
+
+    background-color: var(--color-primary--);
+    padding: 5% 0%;
+
+}
+
+.r-title{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-weight: 500;
+
+    width: 80vw;
+
+    flex-direction: row;
+
+    margin-bottom: 5%;
+}
+
+.r-destaque{
+    font-size: 3.5rem;
+    color: white;
+    margin-left: 1%;
+
+    width: 19vw;
+}
+
+.r-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    color: white;
+    margin-bottom: 10vh; 
+
+}
+
+.r-fases{
+    background-color: var(--color-secundary--);
+    border-radius: 20px;
+
+    width: 20vw;
+    height: 30vh;
+
+    margin: 1%;
+}
+
+.r-description{
+    font-size: 2rem;
+}
+
+@media (max-width:1000px){
+    .inicio{
+        background-image: url(../../img/background-main/back-content-mkt-mobile.png);
+        background-size: cover;
+    }
+    
+    .s-subtitle{
+        margin-top:20vh;
+    }
+
+    .s-info{
+        font-weight: 300;
+        margin: 5%;
+
+        font-size: 1.8rem;
+        width: 90%;
+    }
+
+    .metodologia{
+        margin: 5vh auto;
+    }
+
+    .m-container1{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .m-card{
+        width: 100%;
+        padding: 2%;
+    }
+
+    .p-title{
+        margin: 5% auto;
+    }
+
+    .r-fases{
+        height: 20vh;
+    }
+
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url(../../img/background-main/back-content-mkt-mobile.png);
+        background-position: top;
+        background-size: contain;
+    }
+
+    .logo-main{
+        height: 20vw;
+    }
+
+    .container{
+        margin-left: 0%;
+        width: 90vw;
+    }
+
+    .SEO{
+        height: max-content;
+    }
+
+    .s-subtitle{
+        margin-top: 15vh;
+    }
+
+    .s-title{
+        font-size: 1.8rem;
+    }
+
+    .s-subtitle{
+        font-size: 2rem;
+    }
+
+    .s-info{
+        font-size: 1.5rem;
+    }
+
+    .m-card, #c2, #c3, #c4, #c5, #c6, #c7{
+        flex-direction: column;
+        height: 10vh;
+    }
+
+    .m-img{
+        height: 10vw;
+    }
+
+    .p-card{
+        flex-direction: column;
+    }
+
+    .p-img{
+        height: 40vw;
+    }
+
+    .p-description{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .b-secundary{
+        margin: 2% auto;
+    }
+
+    #right{
+        flex-direction: column;
+    }
+
+    #p-center-img{
+        height: 25vw;
+    }
+
+    .results{
+        padding: 10vh 0%;
+    }
+
+    .r-title{
+        font-size: 2rem;
+        width: max-content;
+        flex-direction: column;
+        margin-bottom: 5vh;
+    }
+
+    .r-destaque{
+        font-size: 2.5rem;
+        width: max-content;
+    }
+
+    .r-fases{
+        width: 90vw;
+        height: 15vh;
+    }
+
+}

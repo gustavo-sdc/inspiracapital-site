@@ -1,0 +1,397 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    font-family:var(--montserrat--)
+}
+
+.button{
+    color:white;
+    background-color:var(--color-secundary--);
+    border-radius: 10px;
+
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:1.5rem;
+    transition: .5s;
+}
+
+.button:focus {
+    outline: 1px solid black;
+}
+
+.button:hover {
+    width: 155px;
+    height: 45px;
+
+    cursor: pointer;
+}
+/* Inicio */
+
+.inicio{
+    background-color: var(--color-primary--);
+    background-image: url('../../produtos/bpo-finance/img/Arrow\ 1.svg');
+    background-position: bottom;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.inicio img{
+    height: 7.5vw;
+}
+
+.inicio h1{
+    width: 40vw;
+    
+    font-size: 2.875rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: -0.92px;
+}
+
+.inicio span{
+    color: var(--color-secundary--);
+}
+
+.inicio p{
+    color:white;
+    width: 20vw;
+
+    font-size:1.5rem;
+    text-align: center;
+    font-weight: 300;
+    line-height:1.6rem;
+}
+
+
+.grow{
+    position: absolute;
+    z-index:-.5;
+    bottom: 5%;
+    height: 60vh;    
+}
+
+.inicio::after{
+    content: '';
+    display: block;
+    background-color: var(--color-primary--);
+    border-radius: 0 0 20px 20px;
+
+    width: 100vw;
+    height:20vh;
+    position: absolute;
+    bottom: -15vh;
+    z-index: -1;
+}
+
+/* Descomplica ai*/
+.descomplica{
+    width: 80vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+
+    padding-top: 2.5%;
+}
+
+.descomplica div{
+    width: max-content;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+}
+
+.descomplica h2{
+    font-size: 2.875rem;
+    font-weight: 600;
+    color: var(--color-secundary--);
+}
+
+.descomplica h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+
+    margin-bottom: 10vh;
+}
+
+.descomplica p{
+    font-size: 1.5rem;
+    width: 40vw;
+    margin-bottom: 10vh;
+
+    max-width: 600px;
+}
+
+.descomplica img{
+    width: 40vw;
+}
+
+/* Video */
+
+.video{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    background-color:#D9D9D9;
+    border-radius:10px;
+
+    position: relative;
+    margin: 10vh auto 10vh auto;
+    padding: 2.5%;
+}
+
+.video h2{
+    color: var(--color-primary--);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.video p{
+    color: #606060;
+    font-size: 1.5rem;
+}
+
+.video iframe{
+    border-radius:10px;
+}
+
+.icons{
+    position:absolute;
+    bottom:10%;
+    left:3%;
+
+    width: max-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Benefícios */
+
+.beneficios{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios h2{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    letter-spacing: -0.64px;
+    text-align: center;
+}
+
+.icones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5vh auto 5vh auto;
+}
+
+.icones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+    width:15vw;
+    margin: 2.5%;
+}
+
+.icones p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 65%;
+}
+
+.beneficios h3{
+    color:var(--color-primary--);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height:1.7rem;
+    letter-spacing: -0.24px;
+
+    margin-top: 10vh;
+}
+
+hr{
+    margin: 5vh auto;
+    padding: 0;
+    background-color: lightgrey;
+    border: none;
+    width: 100%;
+    height: 1px;
+}
+
+.beneficios a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+
+    font-size:1.5rem;
+
+    margin: 2.5%;
+    box-sizing: border-box;
+    padding: 2.5%;
+    
+    cursor: pointer;
+    height: 4.6rem;
+}
+
+@media (max-width:880px){
+    .inicio h1{
+        width: 60vw;
+    }
+
+    .inicio p{
+        width: 40vw;
+    }
+
+    .descomplica p{
+        margin-bottom:5vh
+    }
+
+    .descomplica div{
+        width: 40vw;
+    }
+
+    .video {
+        flex-direction: column;
+        padding:5% 5% 10% 5% ;
+    }
+
+    .video iframe{
+        width: 100%;
+        margin: 10% auto;
+    }
+
+    .icons{
+        left:5.5%
+    }
+
+    .icones div{
+        width:20vw;
+    }
+
+    .icones p{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-size: 250vw;
+        background-position: bottom right;
+    }
+
+    .inicio img{
+        height: 20vw;
+    }
+
+    .inicio h1{
+        width: 90vw;
+        font-size:2.35rem;
+    }
+
+    .inicio p{
+        width: 80vw;
+    }
+
+    .descomplica div, .descomplica p{
+        width: 80vw;
+        text-align:left;
+    }
+
+    .descomplica h2{
+        text-align: left !important;
+        font-size:2.5rem;
+    }
+
+    .descomplica img{
+        width: 80vw;
+        margin: 5vh auto;
+    }
+
+    .video {
+        padding:5% 5% 25% 5% ;
+    }
+
+    .video h2{
+        text-align: left !important;
+        height: max-content;
+    }
+
+    .icons{
+        width:70vw;
+        flex-wrap: wrap;
+        bottom:5%;
+        left:10%
+    }
+
+    .beneficios{
+        width: 90vw;
+    }
+
+    .icones div{
+        width: 40vw;
+    }
+
+    hr{
+        margin: 2.5vh auto;
+    }
+
+    .beneficios h2{
+        font-size:2.5rem;
+    }
+}

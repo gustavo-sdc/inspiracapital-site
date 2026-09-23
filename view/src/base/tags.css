@@ -1,0 +1,45 @@
+/* Dependencias */
+@import url('../theme/theme.css');
+
+
+/* Tags Html*/
+
+h1{
+    font-family: var(--font-lexend--);
+    color:white;
+    font-size:2rem;
+    font-weight: 300;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--color-primary--);
+}
+
+/* H3 PARA NÚMEROS*/
+h3{
+    font-weight: 500;
+    font-size: 7rem;
+    color: var(--color-secundary--);
+}
+
+h4{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color-secundary--);
+}
+
+h5{
+    font-family: var(--montserrat--);
+    font-weight: 600;
+    font-size:2.5rem;
+}
+
+b{
+    color: var(--color-primary--);
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,104 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+
+
+*{
+    color:var(--color-primary--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+head, script{
+    display: none;
+}
+
+body{
+    position: relative;
+}
+
+.text-black{
+    color: var(--color-primary--) !important;
+}
+
+/* Inicio */
+
+.inicio{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-image: url('../../img/LP/bpo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.mensagem-container{
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(70%);
+    border-radius: 20px;
+
+    padding: 5%;
+}
+
+.m-title{
+    color:var(--color-primary--);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.m-description{
+    color: var(--color-primary--);
+    font-size: 1.5rem;
+}
+
+.m-description a{
+    color: var(--color-primary--);
+    text-decoration: underline;
+}
+
+.logo-main{
+    height: 5vw;
+    margin-bottom: 5%;
+}
+
+.cta-inspira{
+    margin: 2.5%;
+    color: var(--color-secundary--);
+    font-size: 1.5rem;
+
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px){
+    .mensagem-container{
+        height: 70vh;
+        width: 80vw;
+    }
+
+    .logo-main{
+        height: 40vw;
+    }
+
+    .m-title{
+        font-size: 2rem;
+    }
+
+    .m-description{
+        text-align: center;
+    }
+
+    .cta-inspira{
+        margin-top: 20%;
+    }
+}

@@ -1,0 +1,357 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/domeiaomilhao.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Explicação */
+
+.description{
+    width: 90vw;
+    color: var(--color-primary--);
+    font-size: 2rem;
+
+    margin: 15vh auto;
+}
+
+/* Dores */
+
+.d-c-container{
+    flex-direction: row;
+}
+
+.d-img{
+    height: 25vw;
+}
+
+.d-title{
+    font-size: 2.5rem;
+    width: 60%;
+    text-align: left;
+    color: var(--color-secundary--);
+    font-family: var(--montserrat--);
+    font-weight: 400;
+
+    flex-direction: column;
+    
+}
+
+.d-destaque{
+    color: var(--color-primary--);
+    width: max-content;
+    margin-left: 50%;
+    font-size: 3rem;
+}
+
+.d-container{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+    width: 100vw;
+    height: max-content;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 5% 0%;
+    margin-bottom: 5%;
+}
+
+.d-content{
+    width: 15vw;
+    margin:2%;
+}
+
+.d-info{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Jornada */
+
+.jornada{
+    width: 100vw;
+}
+
+.j-title{
+    color: var(--color-secundary--);
+    margin: 10% auto 5% auto;
+    font-weight: 500;
+}
+
+.j-container{
+    flex-direction: row;    
+    width: 100vw;
+}
+
+.j-content{
+    margin: 5%;
+    width: 10vw;
+    height: 5vh;
+    justify-content: start;
+}
+
+#j-inverso{
+    flex-direction: column-reverse;
+    justify-content: end;
+}
+
+.j-info{
+    width: max-content;
+    font-size: 2rem;
+}
+
+hr{
+    background-color: var(--color-secundary--);
+    border: none;
+
+    width: 100vw;
+    height: 5vh;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.j-description{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+
+    margin: 5% auto;
+    padding: 5% 0%;
+
+    width: 90vw;
+    height: max-content;
+}
+
+.j-desc-info{
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+}
+
+.list-description{
+    justify-content: left;
+    align-items: start;
+    width: 80%;
+    margin: 5% auto 0% auto;
+}
+
+.j-desc{
+    color: white;
+    font-size: 1.5rem;
+    width: max-content;
+}
+
+
+/* Entrega */
+.entrega{
+    width: 100vw;
+}
+
+.e-title{
+    color: var(--color-secundary--);
+    font-size: 3rem;
+    margin: 5%;
+}
+
+.e-container{
+    flex-direction: row;
+}
+
+.e-content{
+    background-color: var(--color-primary--);
+    border-radius: 20px;
+    width: 40vw;
+    height: 35vh;
+
+    margin: 1%; 
+}
+
+.e-img{
+    height: 5vw;
+    margin: 2%;
+}
+
+.e-info{
+    color:var(--color-secundary--);
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: top;
+    }
+
+    .container{
+        margin-left: 0%;
+    }
+
+    .description{
+        margin: 5vh auto;
+    }
+
+    .d-destaque{
+        margin-left: 30%;
+    }
+
+    .d-icon{
+        height: 5vw;
+    }
+
+    .j-content{
+        margin: 2%;
+    }
+
+    .j-info{
+        font-size: 1.5rem;
+    }
+
+    .j-img{
+        height:5vw;
+    }
+
+    .j-line{
+        height: 2.5vh;
+    }
+
+    .e-content{
+        height: 20vh;
+    }
+
+    .e-info{
+        width: 90%;
+    }
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url(../../img/background-main/mobile-do-mei-ao-milhao.png);
+        background-position: bottom;
+    }
+
+    .description{
+        font-size: 1.5rem;
+        margin: 10vh auto;
+    }
+
+    .d-c-container{
+        flex-direction: column-reverse;
+    }
+
+    .d-title{
+        width: 90vw;
+        font-size: 2rem;
+    }
+
+    .d-destaque{
+        font-size: 2.5rem;
+        margin-left: 20%;
+    }
+
+    .d-img{
+        height: 30vw;
+    }
+
+    .d-content{
+        width: 25vw; 
+        margin-top:5%;
+        margin-bottom: 5%;
+    }
+
+    .d-info{
+        font-size: 1.3rem;
+    }
+
+    .d-icon{
+        height: 10vw;
+    }
+
+    .j-title{
+        margin-top: 5vh;
+    }
+
+    .j-container{
+        flex-direction: column;
+        margin: 5% auto;
+    }
+
+    .j-line{
+        rotate: 90deg;
+        right: 45vw;
+        
+        width: 40vh;
+        height: 2.5vw;  
+
+        border-radius: 20px;
+    }
+
+    .j-content{
+        flex-direction: row;
+        width: max-content;
+    }
+
+    #j-inverso{
+        flex-direction: row;
+    }
+
+    .j-info{
+        width: 50vw;
+        align-items: start;
+        margin: 2%;
+    }
+
+    .j-description{
+        height: 30vh;
+    }
+
+    .j-desc-info{
+        font-size:1.5rem;
+    }
+
+    .j-desc{
+        font-size: 1.3rem;
+    }
+
+    .e-container{
+        flex-direction: column;
+    }
+
+    .e-content{
+        width: 90vw;
+    }
+
+    .e-img{
+        height: 20vw;
+    }
+
+    .e-info{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,506 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+*{
+    color:var(--color-primary--);
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: var(--font-lexend--);
+    color:white;
+    font-size:2rem;
+    font-weight: 300;
+}
+
+/*Inicio*/
+.inicio{
+    background-image: url('../../img/background-main/back-smart-control-finance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Smart Control Finance */
+.apresentation{
+    height: max-content;
+    width: 97.5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:  15vh 0% 2.5% 0%;
+}
+
+.a-title{
+    color: var(--color-primary--);
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 2% 0%;
+    text-align: center;
+}
+
+.a-img{
+    height: 1.5vw;
+}
+
+details{
+    width: 80vw;
+}
+
+summary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    border-bottom: 1px solid var(--color-secundary--);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+  summary:before {
+    content: "+"; 
+    color: var(--color-secundary--); 
+    float: left;  
+    font-weight: bold; 
+    padding: 0%; 
+    text-align: center; 
+    width: 20px;
+    left: 20px;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+details[open] summary:before {
+    content: "-";
+
+}
+
+
+.a-description{
+    border-radius: 20px;
+
+    padding:1%;
+
+    color: var(--color-primary--);
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 300;
+
+    font-family: var(--montserrat--);
+
+    width: 100%;
+
+    transition: .7s;
+
+    list-style-type: none;
+}
+
+.i-img{
+    height: 1.5vw;
+}
+
+#saiba{
+    display: none;
+}
+
+#saiba:checked + .a-description{
+    visibility: visible;
+    display: flex;
+
+    transition: 1s;
+}
+
+/* Informações */
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+    margin: 10vh auto;
+}
+
+.i-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
+
+.i-title{
+    font-size: 2.5rem;
+}
+
+.i-description{
+    font-size: 2rem;
+    text-align:justify;
+    font-weight: 400;
+    font-family: var(--montserrat--);
+
+    margin: 5% auto;
+}
+
+.i-img{
+    height: 25vw;
+}
+
+/* ERP's Atendidos */
+
+.erp{
+    background-color: var(--color-primary--);
+    border-radius:20px;
+    
+    width: 100vw;
+    height: max-content;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 5% 0%;
+}
+
+.container-erp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 2.5vw;
+
+    width: 40vw;
+}
+
+.column{
+    margin: 10% 2.5% 0% 0%;
+}
+
+#left{
+    margin:0% 0% 10% 2.5%;
+}
+
+.card{
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+
+    width: 20vw;
+    height:20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5%;
+}
+
+.e-img{
+    height:2.5vw;
+}
+
+#kamino{
+
+}
+
+.e-info{
+    width: 40vw;
+    height: 70vh;
+
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: left;
+}
+
+.e-title{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.e-description{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 5% 0%;
+    color:white;
+    font-weight: 300;
+}
+
+
+
+/* Benefícios */
+
+.beneficios{
+    width: 90vw;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+
+    margin: 15vh auto 5vh auto;
+}
+
+.b-title{
+    color: var(--color-secundary--);
+    font-family: var(--montserrat--);
+    font-size: 4rem;
+
+    margin: 5% 0% 5% 0%;
+}
+
+.b-description{
+    font-family: var(--montserrat--);
+    font-size: 1.8rem;
+    text-align: justify;
+
+    margin: 0% 0% 5% 0%;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+
+    width: 100%;
+}
+
+.b-card{
+    background-color: #E8E8E8;
+    border-radius: 10px;
+
+    width: 20vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    margin: 1%;
+}
+
+.b-info{
+    font-size: 1.5rem;
+    margin: 5%;
+    text-align: left;
+    font-weight: 300;
+}
+
+
+
+
+
+/* Responsividade */
+
+
+@media (max-width:1000px){
+    /* Inicio */
+    .inicio{
+        background-image:url('../../img/background-main/back-smart-control-finance-mobile.png') ;
+        background-position: top;
+    }
+
+    /* Apresentação */
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .a-description{
+        font-size: 1.5rem;
+        margin-bottom:2.5%;
+    }
+
+    .icons{
+        height: 2.5vw;
+    }
+
+    /* Facilidade */
+    .i-description{
+        font-size: 1.8rem;
+    }
+
+
+    /* Atendimento */
+
+    .e-info{
+        height: max-content;
+    }    
+
+    .e-title{
+        font-size: 2.3rem;
+    }
+
+    .e-description{
+        font-size: 1.5rem;
+        margin: 15% 0% 15% 0%;
+    }
+
+    .card{
+        height: 10vh;
+    }
+
+    /* Final */
+
+    .b-title{
+        font-size: 2.8rem;
+    }
+
+    .b-description{
+        font-size: 2rem;
+    }
+
+    .card-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .b-card{
+        width: 40vw;
+        height: 7.5vh;
+    }
+
+    .b-info{
+        font-size:1.3rem;
+    }
+
+
+}
+
+@media (max-width:550px){
+    /*Inicio*/
+
+    /*Apresentação*/
+
+    .apresentation{
+        padding: 5% 0% 5% 0%;
+    }
+
+    .a-title{
+        font-size: 2rem;
+        width: 95%;
+    }
+
+    .a-description{
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 10% auto;
+        color: var(--color-primary--);
+        text-align: justify;
+    }
+
+    .icons{
+        height: 5vw;
+    }
+
+    /* Info */
+
+    .info{
+        flex-direction: column-reverse;
+        margin: 7.5vh auto;
+    }
+
+    .i-img{
+        height: 40vw;
+        margin: 2%;
+    }
+
+    .i-content{
+        margin-left: 0%;
+    }
+
+    .i-title{
+        font-size: 2rem;
+    }
+
+    .i-description{
+        font-size: 1.3rem;
+    }
+
+
+    /* Atendimento */
+
+    .erp{
+        flex-direction: column;
+    }
+
+    .e-info{
+        width: 90vw;
+    }
+
+    .container-erp{
+        margin: 0%;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .card{
+        margin: 1%;
+        width: 35vw;
+    }
+
+    #left{
+        margin: 0%;
+    }
+
+    .e-img{
+        height: 3.5vw;
+    }
+
+    .e-title{
+        font-size: 2rem;
+        text-align: center;
+        margin: 5% 0% 5% 0%;
+    }
+
+    .e-description{
+        margin: 0%;
+        font-size: 1.5rem;
+    }
+
+    #e-button{
+        margin: 5% 0% 5% 0%;
+    }
+
+    /* Fiinal */
+
+    .beneficios{
+        margin: 10vh auto 5vh auto;
+    }
+
+    .b-title{
+        font-size: 2.5rem;
+    }
+
+    .b-description{
+        font-size: 1.5rem;
+    }
+
+    .b-info{
+        font-size: 1rem;
+    }
+
+}

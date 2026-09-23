@@ -1,0 +1,124 @@
+
+#NAO REMOVER --> RESPONSAVEL POR COLOCAR O SSL NA URL
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#NAO REMOVER --> RESPONSAVEL POR COLOCAR O CADEADO NA URL
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:AXnYVcPhKW
+ErrorDocument 404 /404.php
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE AXnYVcPhKW:ERRORPAGEID
+
+
+# REDIRECTS
+
+redirect 301 /mente-fechada-x-mente-aberta/ /portal/mente-fechada-x-mente-aberta/
+
+redirect 301 /como-aplicar-os-conceitos-de-eficiencia-eficacia-e-efetividade-na-sua-empresa-descubra-ja/ /portal/como-aplicar-os-conceitos-de-eficiencia/
+
+redirect 301 /voce-se-considera-uma-pessoa-organizada-entao-voce-vai-gostar-desse-post/ /portal/voce-se-considera-uma-pessoa-organizada-entao-voce-vai-gostar-desse-post/
+
+redirect 301 /5c-no-trabalho-em-equipe/ /portal/5c-no-trabalho-em-equipe/
+
+redirect 301 /funil-de-aquisicao-de-clientes-o-que-e/ /portal/funil-de-aquisicao-de-clientes
+
+redirect 301 /domeiaomilhao/ /
+ 
+redirect 301 /5-forcas-de-porter-descubra-o-que-essa-metodologia-representa/  /portal/5-forcas-de-porter/
+
+redirect 301 /dica-de-serie-girl-boss/ /portal/dica-de-serie-girl-boss/
+
+redirect 301 /dificuldades-de-organizar-suas-tarefas-diarias-a-matriz-de-eisenhower-pode-te-ajudar/ /portal/matriz-de-eisenhower
+
+redirect 301 /dica-de-serie-para-reflexao-e-aprendizado-100-humanos/ /portal/dica-de-serie-100-humanos/
+
+redirect 301 /dica-de-leitura-o-poder-do-habito/ /portal/dica-de-leitura-o-poder-do-habito/
+
+redirect 301 /aquisicao-de-clientes/ /portal/funil-de-aquisicao-de-clientes/
+
+redirect 301 /grupo-x-equipe/ /portal/grupo-x-equipe/
+
+redirect 301 /dicas-de-livro-nao-nascemos-prontos/ /portal/dicas-de-livros-nao-nascemos-prontos/
+
+redirect 301 /como-realmente-e-ser-produtivo/ /portal/como-realmente-e-ser-produtivo/
+
+redirect 301 /inteligencia-emocional-no-trabalho/ /portal/inteligencia-emocional-no-trabalho/
+
+redirect 301 /tag/mente-fechada/ /portal/mente-fechada-x-mente-aberta/
+
+redirect 301 /8-competencias-digitais-mais-procuradas/ /portal/8-competencias-digitais-mais-procuradas/
+
+redirect 301 /situacoes-que-voce-negocia-e-nem-percebe/ /portal/situacoes-que-voce-negocia-e-nem-percebe/
+
+redirect 301 /tag/perfil/ /portal/perfil-de-inovacao-do-lider/
+
+redirect 301 /inspira-lab/ /
+
+redirect 301 /perfil-de-inovacao-do-lider/ /portal/perfil-de-inovacao-do-lider
+
+redirect 301 /blog/ /portal/
+
+redirect 301 /tag/equipe/ /portal/?pesquisa=equipe/
+
+redirect 301 /nao-caia-no-greenwashing/ /portal/nao-caia-no-greenwashing/
+
+redirect 301 /tag/clientes/ /portal/?pesquisa=clientes/
+
+redirect 301 /tag/estrategia/ /portal/?pesquisa=estrategia/
+
+redirect 301 /politica-de-privacidade/ /portal/politica-de-privacidade/
+
+redirect 301 /tag/girlboss/ /portal/?pesquisa=girlboss/
+
+redirect 301 /4-motivos-que-podem-te-convencer-a-empreender-no-interior/ /portal/4-motivos-que-podem-te-convencer-a-empreender-no-interior/
+
+redirect 301 /tag/ikigai/ /portal/?pesquisa=ikigai/
+
+redirect 301 /tag/termos/ /portal/?pesquisa=termos/
+
+redirect 301 /tag/leitura/ /portal/?pesquisa=leitura/
+
+redirect 301 /tag/metodologia/ /portal/?pesquisa=metodologia/
+
+redirect 301 /tag/reflexao/ /portal/?pesquisa=reflexao/
+
+redirect 301 /tag/powerpoinst/ /portal/?pesquisa=powerpoint/
+
+redirect 301 /inspira-finance/ /produtos/smart-control-finance/
+
+redirect 301 /tag/vendas/ /portal/?pesquisa=vendas/
+
+redirect 301 /como-voce-lida-com-as-adversidades-e-desafios-no-trabalho/ /portal/adversidades-e-desafios-no-trabalho/
+
+redirect 301 /como-ser-mais-organizado-no-trabalho/ /como-ser-mais-organizado-no-trabalho/
+
+redirect 301 /tag/definicoes/ /portal/?pesquisa=definicoes/
+
+redirect 301 /tag/eficiencia/ /portal/?pesquisa=eficiencia/
+
+redirect 301 /tag/inovacao/ /portal/?pesquisa=inovacao/
+
+redirect 301 /tag/livro/ /portal/?pesquisa=livro/
+
+redirect 301 /tag/metodologiaclientes/ /portal/?pesquisa=metodologiaclientes/
+
+redirect 301 /tag/negociacao/ /portal/?pesquisa=negociacao/
+
+redirect 301 /tag/negociar/ /portal/?pesquisa=negociar/
+
+redirect 301 /tag/serie/ /portal/?pesquisa=serie/
+
+redirect 301 /tag/saberes/ /portal/?pesquisa=saberes/
+
+redirect 301 /inspira-academy/ /
+
+redirect 301 /tag/dicas/ /portal/?pesquisa=dicas/
+
+redirect 301 /tag/dicadeserie/ /portal/?pesquisa=dicadeserie/
+
+redirect 301 /tag/inteligencia-emocional/ /portal/?pesquisa=inteligencia-emocional/
+
+# REDIRECTS

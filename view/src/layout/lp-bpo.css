@@ -1,0 +1,560 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+
+
+:root{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*{
+    color:var(--color-primary--);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+head, script{
+    display: none;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+html,body,.app{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Inicio */
+
+.inicio {
+    background: url('../../img/LP/bpo-1/back-lp-1-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    height:max-content;
+    padding: 5%;
+}
+
+.inicio-box{
+    width: 90%;
+}
+
+.inicio img{
+    height: 20vw;
+    margin: 5% auto 5% auto;
+
+    display: flex;
+    align-self: center;
+}
+
+.i-content{
+    font-family: var(--montserrat);
+
+}
+
+.i-content h1{
+    font-size: clamp(1.2rem, 1.5rem * 1.5, 3.2rem);
+    color: var(--color-secundary--);
+    margin: 5% auto;
+    font-weight: 600;
+}
+
+.i-content p{
+    color: white;
+}
+
+form{
+    width: 90vw;
+}
+
+fieldset{
+    border:none;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 100%;
+
+    margin: 1.5% auto 1.5% 0;
+}
+
+fieldset div label{
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+fieldset div label span{
+    margin-left:1rem;
+    color:lightgrey;
+}
+
+fieldset div input{
+    height: 4.6rem;
+    border: none;
+    border-radius: 5px;
+
+    padding: 2.5%;
+}
+
+fieldset div input:focus{
+    outline: none;
+}
+
+legend{
+    color: white;
+    margin: 10% auto 5% auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+legend span{
+    font-weight: 400;
+    color: var(--color-secundary--);
+}
+
+.fieldset-content{
+    height: max-content;
+}
+
+.send-content{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    margin: 5% auto 2.5% auto;
+
+    cursor: pointer;
+}
+
+.send-content label{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    
+    cursor: pointer;
+}
+
+.send-content input{
+    background-color: var(--color-secundary--);
+    position: absolute;
+    z-index: 999;
+
+    color: white;
+    font-weight: 600;
+
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Clientes */
+
+.clients{
+    background: var(--color-primary--);
+    padding: 5rem 5vw;
+
+    border-radius: 0 0 1rem 1rem;
+}
+
+.clients div{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.clients img{
+    max-height: 10rem;
+    max-width:10rem;
+    object-fit: cover;
+}
+
+.clients div h2{
+    color: var(--color-secundary--);
+    font-size: 2rem;
+    font-weight: 400;
+    
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.clients div h2 span{
+    font-weight: 600;
+    color: white;
+}
+
+.clients div a{
+    margin-bottom: 5rem;
+    width: inherit;
+
+    cursor: pointer;
+}
+
+.clients div a button{
+    border-radius: 5px;
+    border: none;
+    background:#FFF;
+    
+    width: 100%;
+    height: 4.6rem;
+
+    margin: auto;
+}
+
+/* Benefícios */
+
+.benefits{
+    width: 90vw;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.benefits h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.benefits-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-box{
+    text-align: center;
+    margin: 5% auto;
+    transition: .3s;
+}
+
+.benefits-box:focus,
+.benefits-box:hover{
+    transform: scale(1.05);
+}
+
+.benefits div h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secundary--);
+
+    margin-bottom: 5px;
+}
+
+.benefits div p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:var(--grey-600);
+}
+
+.box{
+    width: 90vw;
+    padding: 10%;
+
+    background-color: var(--grey-600);
+    border-radius: 1rem;
+
+    text-align: left;
+}
+
+.box div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem auto;
+    padding: 0% !important;
+
+    transition: .3s;
+}
+
+.box div div{
+    margin: 0% !important;
+    padding: 0% !important;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.box div h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box div p{
+    color: white;
+}
+
+hr{
+    color: #FFF;
+}
+
+.benefits a button{
+    width: 25rem;
+    height: 4.6rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: transparent;
+    color: var(--color-secundary--);
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+/* Inspira Capital */
+
+.inspira{
+    width: 90vw;
+    margin: auto;   
+}
+
+.inspira h2, .inspira h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.apresentation{
+    text-align: center;
+}
+
+.apresentation h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.apresentation p{
+    margin: 5% auto;
+    font-size: 1.2rem;
+}
+
+.card{
+    background-color: var(--color-primary--);
+    border-radius:1rem;
+
+    margin: 10% auto;
+    padding: 5% ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0% 5%;
+}
+
+.card ul li {
+    color: white;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight:300;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    margin: 10% auto 2.5% auto;
+    font-size: 2.4rem;
+}
+
+.content button{
+    margin: auto;
+    width: 25rem;
+    height: 4.6rem;
+
+    background-color: var(--color-secundary--);
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--color-primary--);
+    height: 4.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5vh;
+}
+
+footer h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+footer h2 a{
+    font-weight: 600;
+    color: var(--color-secundary--);
+}
+
+
+@media (min-width:880px){
+    body{
+        font-size: 1.6rem;
+    }
+
+    h1{
+        width: 75%;
+        margin-left: 0% !important;
+    }
+
+    .inicio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    form{
+        width: inherit;
+        background-color: var(--grey-600);
+        padding: 5%;
+        border-radius: 1rem;
+    }
+
+    .inicio img{
+        height: 5vw;
+        align-self: left;
+        margin: 5% 0%;
+    }
+
+    .fieldset-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    legend{
+        margin: 5% 0%;
+    }
+
+    .clients{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clients div{
+        gap: 2.5rem;
+    }
+
+    .c-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        padding: 0% 10%;
+    }
+
+    .benefits div{
+        margin: .5% auto;
+        padding: 2.5%;
+    }
+
+    hr{
+        margin: 2% auto;
+    }
+
+    .apresentation p{
+        font-size: 1.6rem;
+        margin: 2.5% auto;
+    }
+
+    .benefits h2{
+        font-size: 3.2rem;
+    }
+
+    .benefits div h2{
+        font-size: 1.8rem;
+    }
+
+    .benefits-box{
+        width: 33%;
+    }
+
+    .box{
+        margin: 2.5% auto !important;
+        padding: 0% 5%;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    hr{
+        height: 50%;
+    }
+
+    .inspira{
+        margin: 10% auto;
+    }
+
+    .inspira h2{
+        font-size:3.2rem;
+    }
+
+    .i-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        gap:1rem;
+    }
+
+    .i-box h2{
+        color: var(--color-secundary--);
+    }
+
+    .card{
+        height: 100%;
+    }
+
+    .card a{
+        font-size: 1.6rem;
+        font-weight: 300;
+        width:90%;
+    }
+}

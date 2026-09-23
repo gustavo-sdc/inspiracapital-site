@@ -1,0 +1,355 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/back-smart-control-log.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Apresentação */
+.apresentacao{
+    flex-direction: row;
+    width: 80vw;
+
+    justify-content: space-between;
+}
+
+.a-content{
+    width: 50vw;
+    margin: 10% 0%;
+
+    align-items: start;
+    justify-content:center;
+}
+
+.a-info{
+    color: var(--color-primary--);
+    font-size: 3rem;
+    text-align: left;   
+}
+
+.a-description{
+    color: var(--color-primary--);
+    margin: 5% 0%;
+    font-weight: 300;
+    width: 80%;
+    align-items: start;
+}
+
+.a-img{
+    height: 25vw;
+}
+
+
+/* Cheeego */
+
+.cheeego{
+    background-color: var(--grey--);
+
+    padding:10vh 20vh;
+
+    width: 80vw;
+
+    align-items: start;
+}
+
+.c-head-box{
+    width: 80vw;
+
+    flex-direction: row;
+    justify-content: start;
+}
+
+.c-title{
+    color: var(--color-secundary--);
+    font-size: 3.5rem;
+}
+
+.c-subtitle{
+    color: var(--color-primary--);
+    font-size: 2rem;
+}
+
+.c-content{
+    width:80vw;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    margin: 2.5% auto;
+}
+
+.c-card{
+    width: 20vw;
+    height: 20vh;
+
+    flex-direction: row;
+    flex-flow: wrap;
+
+    justify-content: start;
+    align-items: center;
+}
+
+.c-letra{
+    font-size: 3rem;
+}
+
+.c-palavra{
+    font-size:2.3rem;
+    margin:auto 2.5%;
+}
+
+.c-info{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+/* Dashboards & Indicadores */
+
+.desh-indic{
+    width: 80vw;
+    margin: 10vh auto;
+}
+
+.explicacao{
+    width:100%;    
+}
+
+.di-title{
+    color:var(--grey-one);
+    font-size: 2.5rem;
+    font-weight:600;
+    text-decoration: underline;
+}
+
+.di-info{
+    font-size: 2rem;
+    margin: 5% auto;
+}
+
+.di-area{
+    width:100%;
+    flex-direction: row;
+
+    margin: 10% auto;
+}
+
+.di-area-content{
+    width:100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.di-content{
+    align-items: start;
+    height:60vh;
+}
+
+.di-item{
+    flex-direction: row;
+}
+
+.di-area-title{
+    font-size: 4rem;
+}
+
+.di-list{
+    justify-content: left;
+    align-items: start;
+
+    margin: 15% auto;
+}
+
+.di-description{
+    font-size: 2rem;
+}
+
+.di-img{
+    height:25vw;
+}
+
+.phrase{
+    margin: 5vh auto;
+}
+
+.p-info{
+    font-size: 2.5rem;
+    color: var(--grey-one);
+    text-align: center;
+}
+
+#reverse{
+    flex-direction: row-reverse;
+}
+
+/* Responsividade */
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: top;
+        background-size: auto;
+    }
+
+    .a-info{
+        font-size: 2rem;
+    }
+
+    .c-title{
+        font-size: 3rem;
+    }
+
+    .c-subtitle{
+        font-size: 1.5rem;
+        margin: auto 1%;
+    }
+
+    .c-card{
+        height:15vh;
+    }
+
+    .di-content{
+        height: 20vh;
+    }
+
+    .di-area-title{
+        font-size: 2.5rem;
+    }
+
+    .di-list{
+        margin: 5% auto;
+    }
+
+    .di-description{
+        justify-content: left;
+        align-items: start;
+        text-align: left;
+
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url("../../img/background-main/back-smart-control-log-mobile.png");
+    }
+
+    .container{
+        margin-left: 0%;
+    }
+
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .a-content{
+        width:80vw;
+    }
+
+    .a-img{
+        height: 70vw;
+    }
+
+    .cheeego{
+        padding:10vh 4.5vh;
+    }
+
+    .c-head-box{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        margin: auto;
+    }
+
+    .c-content{
+        margin: 5vh auto;
+    }
+
+    .c-card{
+        width: 90vw;
+        height: 10vh;
+
+        margin: 5% auto;
+    }
+
+    .c-info{
+        width:100%;
+        justify-content: left;
+        align-items: start;
+    }
+
+    .c-letra{
+        font-size: 2.5rem;
+    }
+
+    .c-palavra{
+        font-size:2rem;
+    }
+
+    .di-info{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .di-area-content{
+        flex-direction: column-reverse;
+        margin: 10% auto;
+    }
+
+    .di-img{
+        height: 60vw;
+    }
+
+    .di-content{
+        width: 100%;
+
+        margin: 5% auto;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 30vh;
+    }
+
+    .di-list{
+        margin: 5% 0%;
+    }
+
+    #reverse{
+        flex-direction: column-reverse;
+    }
+
+    .b-secundary{
+        width: 50vw;
+        height: 5vh;
+    }
+}

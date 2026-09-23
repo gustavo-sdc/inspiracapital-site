@@ -1,0 +1,571 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+* {
+    padding:0px;
+    margin:0px;
+    font-family: 'Lexend Deca', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    overflow-y: hidden;
+}
+
+.container-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width:65vw;
+    height:1vh;
+    background-color: #EE8F2F;
+
+    margin-top:2%;
+    margin-bottom:7%;
+}
+
+h1{
+
+    margin-top:10%;
+    color:#3A5068;
+    font-size: .5em;
+    text-align:justify;
+    font-family:'Lexend Deca', sans-serif;
+    transition:0.3s;
+
+}
+
+h2{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:2.5em;
+    text-align: center;
+    color:#1c2733;
+    font-weight: 400;
+
+    margin: 10% 0% 0% 0%;
+}
+
+h3{
+    text-align: center;
+    color:#1c2733;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: auto;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+h4{
+    font-family: 'Lexend-Deca', sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+/*------------------------------------------------------------------------------------------------*/
+
+/*Parte Inicial*/
+#Inicial{
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(90deg, rgba(58,80,104,1) 0%, rgba(28,39,51,1) 100%);
+    transition: all 0.1s;
+
+}
+
+#box-inicial{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height:100vh;
+
+}
+
+#logo{
+    height:7.5vw;
+}
+
+.frase{     
+    color: #3b3b3b;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height:1.7rem;
+}
+
+#box-inicial div{  
+    margin: auto; 
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-main{
+    color: white;
+    font-size:3.2rem;
+    font-weight: 400;
+    margin:0;
+    margin-left: 2.5%;
+    text-align: left;
+    max-width: 60rem;
+
+}
+
+#f{
+    transform: rotate(45deg);
+}
+
+ul a:hover,
+ul a:focus{
+    color:#FFF
+}
+
+#arrow-down{
+    background-color: white;
+    color:var(--color-primary--);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1%;
+    border-radius: 100%;
+
+    position: absolute;
+    top:95vh;
+    left: 47.5vw;
+
+    width: 25px;
+    height: 25px;
+
+    font-size: 3rem;
+    font-weight:900;
+}
+
+#arrow-down-icon{
+    width: 15px;
+}
+
+/*Parte Inicial*/
+
+
+/* Produtos */
+
+.container{    
+    width: 97.5%;
+    height:auto;
+
+    margin-left:2%;
+
+    scroll-behavior: smooth;
+
+    /*background-color: var(--color-secundary--);*/
+    border-radius:20px;
+    
+    width: 90vw;
+    margin: 2.5% auto;
+    padding: 5vh 0% 2.5vh 0%;
+}
+
+.container-main{
+
+    width:100%;
+    height:auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.container-box{
+    width:76.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
+    margin: auto;    
+}
+
+.horizontal-content-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width:95vw;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    scrollbar-width: none;
+}
+
+.c-ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+
+    margin: auto;
+}
+
+.card-content{
+    background-color: #1c2733;
+    border-radius: 10px;
+    margin:0px 0px 0px 5px;
+    padding-bottom: 10px; 
+
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height:35vh;
+
+    transition:.7s;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:25vw;
+    height:100%;
+
+    text-decoration: none;
+
+    transition:.7s;
+}
+
+.logo{
+    height: 5vw;
+    transition:.3s;
+}
+
+.frase1{
+    color:white;
+
+    line-height: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10%;
+    word-spacing: -2%;
+
+
+    text-align: center;
+    width:90%;
+    transition:1s;
+}
+
+.description{
+    color:white;
+    text-align: left;
+    font-size: 1.35rem;
+    font-weight: 300;
+    width:90%;
+
+    padding-top: 1vw;
+    display: none;
+    transition:.5s;
+}
+
+.card-content:hover {
+    justify-content: start;
+    height:38vh;
+}
+
+.dropdown{
+    margin-top:7vh;
+}
+
+.card:hover .description{
+    display:flex;
+    margin-top: 0%;
+    transition:.3s;
+}
+
+.card-content:hover .frase1{
+    transition:.5s;
+}
+
+.card-content:hover .logo{
+    top:10%;
+    height:3.5vw;
+    transition:.7s;
+}
+
+#icon-arrow-left{
+    height: 1.5vw;
+    rotate:180deg;
+}
+
+#icon-arrow-right{
+    height: 1.5vw;
+}
+
+#scroll{
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    }
+
+.btn-scroll{
+    background-color: transparent;
+    border: none;
+    
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2vh;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+    position: absolute;
+    top:55%;
+}
+
+.btn-scroll:hover{
+    scale: 1.5;
+}
+
+.left{
+    left: 2.5rem;
+}
+
+.right{
+    right: 2.5rem;
+}
+
+/* Botões de avaço e retorno do carrosel*/
+
+#GEST #scroll, #MARKT #scroll, #CONSULT #scroll, #FINANCE #scroll{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Produtos*/
+
+/*--------------------------------------------------------------------------*/
+/*Caixas*/
+
+
+
+/*--------------------------------*/
+
+/* RESPONSIVIDADE */
+
+@media (max-width:850px){
+
+    /* INÍCIO */
+
+    .Inicio{
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url("../../img/background-main/solucoes-inspira-mobile.png") ;
+    }
+
+    .Items{
+        width: 90vw;
+        height: 100vh;
+
+        padding-top: 10vh;
+        align-items: center;
+    }
+
+    .logo-inicial{
+        height:30vw;
+    }
+
+    h1{
+        text-align: justify;
+    }
+
+    .pesquisa, .selection, .section-select, .link-select{
+        width: 80vw;
+    }
+
+    #search{
+        background-color: transparent;
+        border:none;
+    }
+
+    #box-inicial div{
+        flex-direction: column;
+        align-items: start;
+        padding: 10%;
+    }
+
+    .title{
+        margin: 0;
+    }
+
+    #logo{
+        height: 15vw;
+        margin-bottom: 2.5%;
+    }
+
+    /* INÍCIO */
+
+
+    /* DESTAQUES */
+
+    h2{
+        font-size: 2em;
+    }
+
+    .d-content{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .d-description{
+        text-align: justify;
+        padding-top: 10vh;
+    }
+
+    /* DESTAQUES */
+
+    /* PRODUTOS */
+
+    #scroll{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    h3{
+        font-size: 2em;
+        margin-top: 1vh;
+    }
+
+    .container-box{
+        overflow-x: scroll;
+    }
+
+    .card{
+        width: 75vw;
+    }
+
+    .logo{
+        height:25vw;
+    }
+
+    .description{
+        display: flex;
+    }
+
+    .card:hover .logo{
+        height: 20vw;
+    }
+
+    .horizontal-content-card{
+        width:99vw;
+    }
+
+    #scroll{
+        margin-left: 0%;
+        width:95%;
+        padding: 2%;
+    }
+
+    #icon-arrow-left{
+        height: 7vw;
+        rotate:180deg;
+    }
+    
+    #icon-arrow-right{
+        height: 7vw;
+    }
+
+    /* PRODUTOS */
+
+}
+
+
+@media (max-width:600px){
+
+    .Items{
+        align-items: center;
+    }
+
+    .logo{
+        height:15vw;
+    }
+
+    .logo-inicial{
+        height:25vw;
+    }
+
+    .i-frase{
+        font-size: 1.5rem;
+        margin: 0%;
+        color: #212E3C;
+        font-weight: 300;
+    }
+
+    .icon-search{
+        height: 6vw;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 1em;
+        margin:10%;
+    }
+
+    .r-description{
+        margin-top:15%;
+    }
+
+    .frase1{
+        margin: 5%;
+    }
+
+    .pesquisa{
+        box-sizing: border-box;
+        margin-top: 20%;
+        width:100%;
+    }
+
+
+}
+
+/*---------------------------------------------*/

@@ -1,0 +1,238 @@
+@import url("../theme/theme.css");
+
+*{
+    box-sizing: border-box !important;
+    padding:0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    color:var(--color-primary--);
+    font-weight: 400;
+    font-family: var(--font-lexend--);
+    font-size: 1.6rem;
+}
+
+h2{
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 200;   
+    font-size: 52px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 100px;
+}
+
+h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+p{
+    font-weight: 300;
+}
+/*---------------------------------------- Area Inicial ----------------------------------*/
+
+main{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-image: url(../../img/background-main/back_time.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0% 5vw;
+
+    color:white;
+    text-align: center;
+}
+
+#text img{
+    width: 20rem;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: inherit;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.description-inicial{
+    text-align: left;
+}
+
+main div p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 3rem 0 4rem 0;
+}
+
+
+/*------------------------------------------- Principios --------------------------*/
+
+
+.culture{
+    width:90vw;
+
+    display:flex;
+    flex-direction:column;
+
+    margin: 10vh auto;
+}
+
+.culture h2{
+    text-align: center;
+    font-size: 2.4em;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+
+    width:90vw;
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    width: 100%;
+    padding: 5%;
+}
+
+.item svg{
+    font-size: 20rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    color:var(--color-secundary--);
+    margin:5% 0;
+}
+
+.text{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+    
+    font-weight: 400;
+    text-align:left;
+}
+
+.cuture-description{
+    text-align: justify;
+    margin-top:5%;
+}
+
+/* Mapa */
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mapa h3{
+    margin: 0;
+    font-size: 4.4rem;
+}
+
+.mapa h2{
+    color: var(--color-secundary--);
+    font-size:2.4rem;
+}
+
+.world{
+    width:100%;
+}
+
+.places-grid{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width:90vw;
+    margin:5% auto;
+
+}
+
+.local{
+    display:flex;
+    flex-direction:row;
+    justify-content: left;
+    align-items:center;
+
+    width:30%;
+    margin:0% auto;
+}
+
+.local :hover{
+    color:#FB7800;
+    transition:.35s;
+}
+
+.local svg{
+    width:2rem;
+    height: 2rem;
+    color:var(--color-secundary--)
+}
+
+.local p{
+
+    font-weight: 400;
+    font-size:1.5rem;   
+
+    padding:10px;
+}
+
+@media (min-width:750px){
+    .description-inicial{
+        width: 40%;
+    }
+
+    .item{
+        padding: 2.5% 5%;
+    }
+
+    .item svg{
+        margin: 1% 0;
+    }
+
+    .cuture-description{
+        margin-top: 1%;
+        width: 80vw;
+    }
+
+    .world{
+        margin-top: 2rem;
+        width: 50%;
+    }
+
+    .local{
+        width: max-content;
+        margin:1rem;
+    }
+}

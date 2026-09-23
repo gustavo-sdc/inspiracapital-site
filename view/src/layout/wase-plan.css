@@ -1,0 +1,161 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+*{
+    color:var(--color-primary--);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+head, script{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Inicio */
+
+.inicio{
+    background-image: url('../../img/background-main/waseplan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Explicação */
+
+.explicacao{
+    width: 80vw;
+    height: max-content;
+
+    padding: 10vh 0%;
+    margin: auto;
+
+    flex-direction: row;
+}
+
+.e-container{ 
+    align-items: start;
+
+}
+
+.e-title{
+    color: var(--color-primary--);
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+b{
+    color: var(--color-secundary--);
+}
+
+.e-info{
+    font-family: var(--montserrat--);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-primary--);
+
+    margin: 5vh 0%;
+
+    width: 80%;
+}
+
+.e-img{
+    height: 25vw;
+}
+
+/* Números */
+
+.numeros{
+    width: 80vw;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 10vh auto;
+}
+
+.n-title{
+    color: var(--color-primary--);
+    font-size: 1.5rem;
+}
+
+.n-info{
+    color: var(--color-primary--);
+    font-size: 2rem;
+}
+
+/* Responsividade */
+
+@media (max-width:1000px){
+    .inicio{
+        background-position: top;
+        background-size: auto;
+    } 
+
+    .container{
+        margin: 0%;
+    }
+    
+    .explicacao{
+        flex-direction: column-reverse;
+    }
+
+    .e-container{
+        width: 90vw;
+        align-items: center;
+    }
+
+    .e-title{
+        align-items: center;
+    }
+
+    .e-img{
+        height: 40vw;
+    }
+
+    .numeros{
+        width: 90vw;
+        flex-direction: column;
+        margin: 0vh 0vh;
+    }
+
+    .n-container{
+        margin: 5vh auto;
+    }
+
+    
+}
+
+@media (max-width:550px){
+    .inicio{
+        background-image: url('../../img/background-main/waseplan-mobile.png');
+    }
+
+    .logo-main{
+        height: 40vw;
+    }
+
+    .explicacao{
+        margin:5vh auto;
+    }
+
+    .n-number{
+        font-size: 5rem;
+    }
+}

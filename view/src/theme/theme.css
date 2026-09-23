@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/*font-family: 'Montserrat', sans-serif*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@100;300;400;500;600;700&display=swap');
+/*font-family: 'Inter, sans-serif;*/
+
+
+@import url('../module/btn-whatsapp.css');
+@import url('../module/menu.css');
+@import url('../module/footer.css');
+@import url('../module/lite-yt-embed.css');
+@import url('../module/scroll-clients.css');
+@import url('../module/button.css');
+
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+html{
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*-------------------------------------------------- Variáveis ---------------------------------*/
+:root{
+    --color-primary--:#233140;
+    --color-secundary--:#FF8A00;
+    --blue-secundary--:#31495F;
+    --blue-300:#4F657C;
+
+    --grey--:#e4e4e4;
+    --grey-200:#F9F9F9;
+    --grey-400: #6C6C6C;
+    --grey-600: #1C1C1C;
+    --grey-one:#A6A6A6;
+    --color-base--: white;
+
+    --primary-gradient-color-one:#0E2236;
+    --primary-gradient-color-two:#4F657C;
+
+    --color-whatsapp--:#25d366;
+
+    --gradient-blue-:270deg, 
+    var(--primary-gradient-color-one), 
+    var(--primary-gradient-color-two);
+
+    --font-lexend--:'Lexend Deca', sans-serif;
+    --inter--:'Inter', sans-serif;
+    --montserrat--: 'Montserrat', sans-serif;
+}

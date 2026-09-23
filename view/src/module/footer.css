@@ -1,0 +1,291 @@
+@import url('../theme/theme.css');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+footer{
+    display: grid;
+    place-content: center;
+    padding: 5vh 0%;
+
+    width: 100vw;
+    background-color: var(--color-primary--);
+}
+
+footer a{
+    color:var(--grey-one)
+}
+
+.logo-inspira-capital{
+    height: 3.5rem;
+    margin: 2.5% auto 0%;
+}
+
+#rodape{
+    display: grid;
+    grid-template-rows: auto;
+
+    align-items: center;
+    justify-content: center;
+
+    width:90vw;
+    height: max-content;
+    gap: 2rem;
+
+    padding: 2% 0% 7.5%;
+    margin-top:5vh;
+
+    border-bottom: .1rem solid var(--grey--);
+}
+
+#r-logo{
+    height:15vw;
+    margin-bottom:5%;
+}
+
+/* CONTAINER */
+.nav-list{
+    width: inherit;
+    margin: 2.5% 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0%;
+}
+
+.r-list{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.r-item{
+    font-size: 1.5rem;
+    font-family: var(--montserrat--);
+    margin: 2.5% 0%;
+    font-weight: 500;
+
+    width: max-content;
+}
+
+.r-title{
+    font-size: 2rem;
+}
+
+.r-container{
+
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+footer a{
+    background-color: transparent;
+    text-decoration: none;
+    transition:.3s;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+footer a:hover{
+    color:white;
+}
+
+#r-solucoes{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+footer p{
+    color: var(--grey--);
+    font-size: 1.6rem;
+
+    align-items: start;
+    justify-content:left !important;
+}
+
+.area-container{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start !important;
+    
+    margin-bottom:2rem;
+}
+
+.list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.container-list{
+    padding:0%;
+    margin-left:0vw;
+    width:100%;
+    display: block;
+}
+
+.list-area{
+    height: max-content;
+    margin: .5%;    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    padding:0%;
+}
+
+.list-area li{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: left;
+}
+
+/* INFORMAÇÕES */
+
+#r-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: inherit;
+}
+
+footer .r-description{
+    color:var(--grey-200);
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 2.5% 0%;
+}
+
+footer li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.r-local{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    color: var(--grey-200);
+    font-size: 1rem;
+
+    width: 100%;
+}
+
+.r-local svg{
+    width:2.4rem;
+    height: 2.4rem;
+    margin-right:2.5%;
+}
+
+.r-local svg path{
+    color: var(--grey-200);
+}
+
+/* BOTÕES */
+
+#r-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.list-local{
+    width: max-content;
+    margin: 5% 0%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.rb-sociais{
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 100%;
+
+    border: none;
+    background-color: var(--grey--);
+    color:var(--blue-300);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rb-sociais:hover,
+.rb-sociais:focus{
+    background-color: var(--blue-300);
+    color: var(--grey--);
+}
+
+.rb-sociais svg{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media(min-width:660px){
+    .list-container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(min-width:1025px){
+    #rodape{
+        grid-template-columns:  1fr 1fr;
+    }
+
+
+    .list-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+    }
+
+    #r-logo{
+        height:5vw;
+        margin-bottom:5%;
+    }
+
+    #r-solucoes{
+        align-items: center;
+    }
+
+    #r-solucoes p{
+        margin-bottom:5%;
+    }
+}

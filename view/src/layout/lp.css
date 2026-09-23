@@ -1,0 +1,608 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+
+*{
+    box-sizing: border-box;
+}
+
+.sr-only{
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width:1px;
+    height: 1px;
+    
+}
+
+.sended{
+    background-color: var(--color-whatsapp--) !important;
+}
+
+.cta{
+    width: 15rem;
+    height: 4.6rem;
+
+    background-color: var(--color-secundary--);
+    border: none;
+    border-radius: 1rem;
+
+    display: grid;
+    place-content: center;
+    
+    margin: 5% auto;
+    padding: 2.5%;
+
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}   
+
+.app{
+    padding: 0vw 10vw;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 10% ;
+    padding-bottom: 10%;
+}
+
+main::before{
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    background: url('../../img/LP/bpo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+main:after{
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: linear-gradient(180deg, #233140 0%, rgba(0,0,0,0.0) 70%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+}
+
+main div{
+    width: 100%;
+    height: 90vh;  
+    display: grid;
+    place-content: center;
+}
+
+main div img{
+    height: 20vw;
+    margin: 10% auto;
+}
+
+hr{
+    color: rgba(0,0,0,.1);
+    margin:10% auto;
+    width:100%
+}
+
+h1{
+    font-size: 2.4rem;
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.6rem;
+    color: var(--grey-one);
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.bpo{
+    padding: 20% 0% 10% 0%;
+}
+
+.bpo h2{
+    color: var(--color-primary--);
+    font-weight: 600;
+    margin-bottom: 20%;
+}
+
+.bpo span{
+    color: var(--color-secundary--);
+    font-weight:400;
+}
+
+.box{
+    display: grid;
+    place-content: center;
+    gap:4rem;
+}
+
+.box div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.box div h3{
+    color: var(--color-primary--);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.box div p{
+    font-size: 1.6rem;
+}
+
+.why{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+
+    font-size: 1.6rem;
+
+}
+
+.why-container{
+    padding: 10% 5vw;
+    width: 90vw;
+    position: relative;
+}
+
+.why h2{
+    color: var(--color-secundary--);
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.why h2 span{
+    color: var(--color-primary--);
+    font-weight: 600;   
+}
+
+.why p{
+    margin: 5% auto;
+}
+
+.why ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 10% auto;
+}
+
+.why li{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    text-align: center;
+
+    width: 75%;
+}
+
+.why li p{
+    margin: 0;
+}
+
+.filter{
+    background-color: #233140;
+}
+
+.card{
+    padding: 10%;
+    width: 80vw !important;
+    background: linear-gradient(180deg, var(--color-primary--) 0%, var(--grey-600) 100%);
+    border-radius: 2rem;
+    margin: 10% auto;
+}
+
+.card-left{
+    background: linear-gradient(180deg, #5a5e61 0%, var(--grey-600)  100%);
+}
+
+.content-one h2{
+    color: white;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.content-one p{
+    color: var(--color-secundary--);
+    font-size: 1.8rem;
+}
+
+.content-two h4,  
+.content-two p{
+    color: white;
+    font-size: 1.6rem !important;
+    font-weight: 300;
+}
+
+.content-three{
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+.content-three li{
+    text-align: center;
+    margin: 0 auto;
+    color: var(--grey-one);
+}
+
+.card button{
+    margin: 10% auto;
+    width: 100%;
+
+    background-color: var(--color-secundary--);
+    border-radius: 1rem;
+    border: none;
+    padding: 5%;
+
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.banner-container{
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
+    
+    border-radius: 2rem;
+
+    background: url('../../img/LP/woman.jpg');
+    background-position: center top;
+    background-repeat:no-repeat;
+
+    display: grid;
+    place-content: center;
+}
+
+.banner-container a{    
+    margin: 5% auto;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.banner-container a:hover,
+.banner-container a:focus{
+    transform: scale(1.05);
+}
+
+.contact{
+    margin: 10% 0%;
+    padding: 2.5% 0%;
+    background-color: var(--grey-200);
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 2rem;
+    height: max-content;
+}
+
+.contact h2{
+    color: var(--color-secundary--);
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 5% 0%;
+}
+
+.contact h2 span{
+    font-weight: 700;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+
+    border: none;
+    margin: 2rem;
+    background-color:var(--color-whatsapp--);
+    border-radius: 1rem;
+
+    padding: .75% .75%;
+
+    display: grid;
+    place-content: center;
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+.whatsapp svg{
+    color: #FFF !important;
+}
+
+.whatsapp a{
+    text-decoration: none;
+}
+
+.whatsapp:hover,
+.whatsapp:focus{
+    transform: scale(1.1);
+}
+
+
+form{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container-form{
+    width:100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1rem;
+    width: inherit;
+}
+
+form input{
+    width: 100%;
+    height: 4.6rem;
+
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0rem .1rem .1rem lightgrey; 
+
+    padding-left: 1rem;
+}
+
+form div label{
+    font-size:1.6rem;
+    color: var(--grey-600);
+}
+
+form button{
+    min-width: 25rem;
+    height: 4.6rem;
+
+    background-color: var(--color-secundary--);
+    border:none;
+    border-radius: 1rem;
+
+    margin: 10% 0% 0% 0%;
+
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+@media (min-width:880px){
+    main div img{
+        height: 7.5vw;
+    }
+
+    main div{
+        place-content: start center;
+    }
+
+    main div h1{
+        font-weight: 400;
+    }
+
+    .bpo{
+        padding-bottom: 5%;
+    }
+
+    .bpo h2{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .box{
+        grid-template-columns: 1fr 1fr;
+        padding: 10% 0%;
+    }
+
+    .box div{
+        padding: 0%;
+        flex-direction: row;
+        max-width: 40rem;
+        align-items: start;
+    }
+
+    .box div div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .box div svg{
+        width: 6.4rem !important;
+        height: 6.4rem !important;
+    }
+
+    .why{
+        padding: 10% 0% 10% 0%;
+        margin-left: 0;
+        justify-content: center ;
+        gap: 1rem;
+    }
+
+    .why-container{
+        max-width: 25vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .why-container p{
+        font-size: 1.2rem;
+    }
+
+    .list-container{
+        width: 30vw;
+    }
+
+    .card{
+        width:max-content !important;
+    }
+
+    .left{
+        text-align: left;
+    }
+
+    .why ul{
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .why-container ul li{
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        position: relative;
+
+        align-items: center;
+        justify-content: flex-end;
+        
+        max-width: 45vw;
+        height: 100%;
+
+        gap: 1rem;
+    }
+
+    .card{
+        width: 20vw !important;
+        height: 100%;
+
+        margin: 0%;
+        padding: 5% 2.5%;
+        text-align: center;
+    }
+
+    .card h2{
+        font-size:1.6rem;
+        text-align: center;
+    }
+
+    .card div div h4{
+        font-size: 1rem !important;
+        margin: 2.5%;
+    }
+
+    .card p{
+        font-size:1.2rem !important;
+        margin: 0% !important;
+    }
+
+    .content-one,
+    .content-two,
+    .content-three{
+        font-size:1.2rem;
+    }
+
+    .content-three{
+        gap: 1rem;
+    }
+
+    .banner-container{
+        width: 100%;   
+        margin: 10% auto;
+        background-size: cover;
+        background-position: center center;
+        place-content: center start;
+
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        padding: 10%;
+
+        gap: 2rem;
+    }
+
+    .banner h2{
+        width: 75%;
+        font-size: 2.4rem;
+    }
+
+    .banner button{
+        width: 50%;
+        padding: 2.5%;
+        margin:0%;
+    }
+
+    .contact {
+        padding: 10%;
+    }
+
+    .contact div{
+        text-align: left;
+    }
+
+    .box-chat{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .menssage,
+    .answer{
+        padding: 2.5%;
+        margin: 0!important;
+        max-width: 100%;
+    }
+
+    .command{
+        width: max-content;
+    }
+
+    .command div input{
+        width: 65%;
+    }
+
+
+}

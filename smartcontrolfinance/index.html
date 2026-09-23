@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inspira Capital - Smart Control Finanance</title>
+  <meta name="robots" content="">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="Portuguese">
+  <meta name="generator" content="N/A">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <link href="arquivos_css/login.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+<iframe id="frame" name="frame"             
+  frameborder="0" 
+  marginheight="0" 
+  marginwidth="0" 
+  width="100%" 
+  height="100%" 
+  scrolling="auto"> 
+</iframe>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="imgs/logo.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <input type="text" id="username" class="fadeIn second" name="username" placeholder="Usuário">
+    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Senha">
+    <input type="button" class="fadeIn fourth" value="Logar">
+  </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+document.getElementById("frame").style.display="none"; 
+$("input[type=button]").click(function () {
+      const username = document.querySelector("input[id='username']").value
+      const password = document.querySelector("input[id='password']").value
+      let token = null;
+
+      (async () => {
+        const rawResponse = await fetch("https://backend-app-cd40-prod.herokuapp.com/login_api", {
+          method: "POST",
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({username: username, password: password})
+        })
+        .then((res) => res.json())
+        .then((response) => {
+          if(response.error) {
+            alert(response.error)
+          }
+
+          if(response.accessToken && response.token) {
+            const accessToken = response.accessToken
+            token = response.token
+            localStorage.setItem("ControladoriaAccessToken", accessToken)
+            localStorage.setItem("ControladoriaToken", token)
+
+            window.location.href = "report.html"
+          } 
+        })
+      })();    
+                 });//end click function
+      });//end ready function
+
+         
+</script>
+
+</body>
+</html>
+

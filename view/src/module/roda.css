@@ -1,0 +1,30 @@
+@import url('../theme/theme.css');
+@import url('../base/tags.css');
+@import url('../module/main.css');
+@import url('../module/call-to-action.css');
+@import url('../module/button.css');
+
+
+.d-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos{
+    background-color: var(--color-primary--);
+    border:2px solid var(--color-secundary--);
+    border-radius: 100%;
+
+    width: 85vh;
+    height: 85vh;
+
+    margin: auto;
+
+
+}
+
+.img-logo{
+    height: 10vw;
+}

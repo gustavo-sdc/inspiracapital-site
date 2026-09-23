@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../src/theme/theme.css">
+    <link rel="stylesheet" href="../../src/module/button.css">
+
+    <style>
+        
+        .b-secundary{
+            background-color: var(--color-secundary--);
+            border: none;
+            padding: 1%;
+            border-radius: 10px;
+            color: white;
+            font-family:var(--inter--);
+            font-size: 1.4rem;
+        
+            width:150px;
+            height:50px;
+        }
+        
+        .align{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .alert{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            z-index: 999;
+
+            background-color: white;
+
+            height: 100vh;
+            width: 100vw;
+
+        }    
+
+        .alert-title{
+            font-size: 2.5rem;
+            font-family: var(--montserrat--);
+            font-weight: 400;
+
+            color:var(--color-secundary--);
+
+        }
+
+        .alert-description{
+            color: var(--color-primary--);
+            font-weight: 300;
+            margin: 5% auto;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .alert-button{
+            border: none;
+            border-radius: 10px;
+
+            height: 2p0x;
+        }
+
+        .alert-buttons{
+            width: inherit;
+
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        /*----------------------------------------*/
+
+        .title{
+            color: var(--color-primary--);
+            font-family: var(--montserrat--);
+            letter-spacing: .25cap;
+
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .subtitle{
+            color: var(--color-secundary--);
+            font-family: var(--montserrat--);
+            letter-spacing: .25cap;  
+            font-size: 1.5rem;
+        }
+
+        div{
+            margin-top: 2.5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            width: 50vw;
+        }
+
+        .btn{
+            background-color: var(--color-primary--);
+            border: none;
+            border-radius: 10px;
+
+            width: 25vw;
+            height: 5vh;
+
+            color: white;
+            font-weight: 400;
+
+            margin: 2.5%;
+        }
+        
+    </style>
+
+    <title>Cookies</title>
+    
+</head>
+<body>
+
+
+    <section class="alert align">
+        <div class="alert-info align">
+            <img src="../../util/img/logos/logoInspiraIC.png" alt="logo-inspira-capital">
+            <h2 class="alert-title">Aviso de Cookies & Privacidade</h2>
+            <p class="alert-description">
+                Nós e selecionados usamos cookies ou tecnologias similares para finalidades técnicas.
+                Use o botão “Aceitar” para consentir. </p>
+            </div>
+            <div class="alert-buttons">
+                <button class="b-secundary alert-button" onclick="acceptCookies()">
+                    Aceitar
+                </button>
+        
+            </div>  
+    </section>
+
+
+
+    <script>
+        const alert = document.querySelector('.alert align') 
+        const box = document.querySelector('.alert')
+
+
+        let cookie = sessionStorage.getItem('cookie')
+        console.log(cookie)
+
+        if (cookie =='accept'){
+            init()
+        } else {
+            acceptCookies()
+            init()
+        }
+
+        function acceptCookies(){
+            sessionStorage.setItem('cookie', 'accept')
+            console.log(localStorage)
+
+            init()
+        }
+
+        function init(){
+            console.log(box)
+
+            box.innerHTML = `
+                <h1 class='title'>Olá!! Seja bem vindo, ao futuro da gestão de negócios!</h1>
+                <p class='subtitle'>Como podemos te ajudar?</p>
+
+                <div>
+                    <button class='btn'>Quero conhecer a Inspira</button>
+                    <button class='btn'>Quero acessar um conteúdo específico</button>    
+                </div>
+            `
+        }
+
+    </script>
+</body>
+</html>
